@@ -1,0 +1,35 @@
+Unloading the cpe module is insufficient to restore the system defaults.
+Please run 'source /opt/cray/pe/cpe/24.07/restore_lmod_system_defaults.[csh|sh]'.
+Lmod has detected the following error: Cannot load module "craype-accel-nvidia80". At least one of these module(s) must be loaded:
+   nvhpc nvhpc-mixed atleast("cudatoolkit","11.0") atleast("cuda","11.0")
+
+While processing the following module(s):
+    Module fullname        Module Filename
+    ---------------        ---------------
+    craype-accel-nvidia80  /opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-accel-nvidia80.lua
+
+
+Currently Loaded Modules:
+  1) cmake/3.30.2          4) cray-dsmml/0.3.0           7) cray-mpich/8.1.30   (mpi)     10) cudatoolkit/12.4      (g)    13) kokkos-gpu/4.3.00
+  2) gcc-native/13.2 (c)   5) libfabric/1.20.1           8) cray-libsci/24.07.0           11) craype-accel-nvidia80 (cpe)
+  3) craype/2.7.32   (c)   6) craype-network-ofi (cpe)   9) PrgEnv-gnu/8.5.0    (prgenv)  12) gpu/1.0
+
+  Where:
+   c:       Compiler
+   cpe:     Cray Programming Environment Modules
+   g:       built for GPU
+   mpi:     MPI Providers
+   prgenv:  Programming Environment Modules
+
+ 
+
+In file included from /global/common/software/nersc9/kokkos/4.3.00/gpu/include/Kokkos_Core_fwd.hpp:28:0,
+                 from /global/common/software/nersc9/kokkos/4.3.00/gpu/include/Kokkos_Core.hpp:43,
+                 from /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/hydrogen_simulator_2d.cpp:3:
+/global/common/software/nersc9/kokkos/4.3.00/gpu/include/Kokkos_Macros.hpp:162:2: error: #error "Compiling with GCC version earlier than 8.2.0 is not supported."
+ #error "Compiling with GCC version earlier than 8.2.0 is not supported."
+  ^~~~~
+make[2]: *** [CMakeFiles/hydrogen_simulator_2d.dir/build.make:76: CMakeFiles/hydrogen_simulator_2d.dir/hydrogen_simulator_2d.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/hydrogen_simulator_2d.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

@@ -1,0 +1,94 @@
+
+Currently Loaded Modules:
+  1) craype-x86-milan                                8) craype-accel-nvidia80 (cpe)     15) craype/2.7.32          (c)
+  2) libfabric/1.20.1                                9) gpu/1.0                         16) gcc-native/13.2        (c)
+  3) craype-network-ofi                             10) cudatoolkit/12.4      (g)       17) perftools-base/24.07.0
+  4) xpmem/2.9.6-1.1_20240510205610__g087dc11fc19d  11) PrgEnv-gnu/8.5.0      (prgenv)  18) cpe-cuda/24.07         (cpe)
+  5) cpe/24.07                                      12) cray-dsmml/0.3.0                19) kokkos-gpu/4.3.00
+  6) sqs/2.0                                        13) cray-libsci/24.07.0             20) cmake/3.30.2
+  7) darshan/default                                14) cray-mpich/8.1.30     (mpi)
+
+  Where:
+   c:       Compiler
+   cpe:     Cray Programming Environment Modules
+   g:       built for GPU
+   mpi:     MPI Providers
+   prgenv:  Programming Environment Modules
+
+ 
+
+CMake Warning (dev) at CMakeLists.txt:15 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  Environment variable KOKKOS_ROOT is set to:
+
+    /global/common/software/nersc9/kokkos/4.3.00/gpu
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning at /global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/cmake/Kokkos/KokkosConfigCommon.cmake:59 (MESSAGE):
+  The installed Kokkos configuration does not support CXX extensions.
+  Forcing -DCMAKE_CXX_EXTENSIONS=Off
+Call Stack (most recent call first):
+  /global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/cmake/Kokkos/KokkosConfig.cmake:57 (INCLUDE)
+  CMakeLists.txt:15 (find_package)
+
+
+CMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0104 is not set: CMAKE_CUDA_ARCHITECTURES now detected for NVCC,
+  empty CUDA_ARCHITECTURES not allowed.  Run "cmake --help-policy CMP0104"
+  for policy details.  Use the cmake_policy command to set the policy and
+  suppress this warning.
+
+  CUDA_ARCHITECTURES is empty for target "hydrogen_simulator_2d".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0104 is not set: CMAKE_CUDA_ARCHITECTURES now detected for NVCC,
+  empty CUDA_ARCHITECTURES not allowed.  Run "cmake --help-policy CMP0104"
+  for policy details.  Use the cmake_policy command to set the policy and
+  suppress this warning.
+
+  CUDA_ARCHITECTURES is empty for target "hydrogen_simulator_2d".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    Kokkos_ARCH_AMPERE80
+    Kokkos_ENABLE_CUDA_UVM
+
+
+In file included from /opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2/include/cuda_runtime.h:82,
+                 from <command-line>:
+/opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2/include/crt/host_config.h:136:2: error: #error -- unsupported GNU version! gcc versions later than 12 are not supported! The nvcc flag '-allow-unsupported-compiler' can be used to override this version check; however, using an unsupported host compiler may cause compilation failure or incorrect run time execution. Use at your own risk.
+  136 | #error -- unsupported GNU version! gcc versions later than 12 are not supported! The nvcc flag '-allow-unsupported-compiler' can be used to override this version check; however, using an unsupported host compiler may cause compilation failure or incorrect run time execution. Use at your own risk.
+      |  ^~~~~
+In file included from /global/common/software/nersc9/kokkos/4.3.00/gpu/include/Kokkos_Core_fwd.hpp:28:0,
+                 from /global/common/software/nersc9/kokkos/4.3.00/gpu/include/Kokkos_Core.hpp:43,
+                 from /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/hydrogen_simulator_2d.cpp:8:
+/global/common/software/nersc9/kokkos/4.3.00/gpu/include/Kokkos_Macros.hpp:162:2: error: #error "Compiling with GCC version earlier than 8.2.0 is not supported."
+ #error "Compiling with GCC version earlier than 8.2.0 is not supported."
+  ^~~~~
+In file included from /global/common/software/nersc9/kokkos/4.3.00/gpu/include/desul/atomics/Common.hpp:13,
+                 from /global/common/software/nersc9/kokkos/4.3.00/gpu/include/desul/atomics/Atomic_Ref.hpp:13,
+                 from /global/common/software/nersc9/kokkos/4.3.00/gpu/include/desul/atomics.hpp:12,
+                 from /global/common/software/nersc9/kokkos/4.3.00/gpu/include/Kokkos_Atomics_Desul_Wrapper.hpp:27,
+                 from /global/common/software/nersc9/kokkos/4.3.00/gpu/include/Kokkos_Atomic.hpp:49,
+                 from /global/common/software/nersc9/kokkos/4.3.00/gpu/include/Kokkos_Complex.hpp:23,
+                 from /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/cufft_wrapper.cu:3:
+/global/common/software/nersc9/kokkos/4.3.00/gpu/include/desul/atomics/Macros.hpp:25:2: error: #error Relocatable device code mode incompatible with desul atomics configuration
+   25 | #error Relocatable device code mode incompatible with desul atomics configuration
+      |  ^~~~~
+make[2]: *** [CMakeFiles/hydrogen_simulator_2d.dir/build.make:91: CMakeFiles/hydrogen_simulator_2d.dir/cufft_wrapper.cu.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/hydrogen_simulator_2d.dir/build.make:76: CMakeFiles/hydrogen_simulator_2d.dir/hydrogen_simulator_2d.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/hydrogen_simulator_2d.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
+slurmstepd: error: execve(): /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/hydrogen_simulator_2d: No such file or directory
+srun: error: nid008673: task 0: Exited with exit code 2
+srun: Terminating StepId=37807909.0

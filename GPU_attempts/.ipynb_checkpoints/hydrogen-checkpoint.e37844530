@@ -1,0 +1,47 @@
+Unloading the cpe module is insufficient to restore the system defaults.
+Please run 'source /opt/cray/pe/cpe/24.07/restore_lmod_system_defaults.[csh|sh]'.
+
+Currently Loaded Modules:
+  1) gcc-native/13.2  (c)   4) libfabric/1.20.1           7) cray-libsci/24.07.0           10) craype-accel-nvidia80 (cpe)  13) cmake/3.30.2
+  2) craype/2.7.32    (c)   5) craype-network-ofi (cpe)   8) PrgEnv-gnu/8.5.0    (prgenv)  11) gpu/1.0
+  3) cray-dsmml/0.3.0       6) cray-mpich/8.1.30  (mpi)   9) cudatoolkit/12.4    (g)       12) kokkos-gpu/4.3.00
+
+  Where:
+   c:       Compiler
+   cpe:     Cray Programming Environment Modules
+   g:       built for GPU
+   mpi:     MPI Providers
+   prgenv:  Programming Environment Modules
+
+ 
+
+CMake Warning (dev) at CMakeLists.txt:14 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  Environment variable KOKKOS_ROOT is set to:
+
+    /global/common/software/nersc9/kokkos/4.3.00/gpu
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning at /global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/cmake/Kokkos/KokkosConfigCommon.cmake:59 (MESSAGE):
+  The installed Kokkos configuration does not support CXX extensions.
+  Forcing -DCMAKE_CXX_EXTENSIONS=Off
+Call Stack (most recent call first):
+  /global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/cmake/Kokkos/KokkosConfig.cmake:57 (INCLUDE)
+  CMakeLists.txt:14 (find_package)
+
+
+In file included from /global/common/software/nersc9/kokkos/4.3.00/gpu/include/Kokkos_Core_fwd.hpp:28:0,
+                 from /global/common/software/nersc9/kokkos/4.3.00/gpu/include/Kokkos_Core.hpp:43,
+                 from /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/hydrogen_simulator_2d.cpp:2:
+/global/common/software/nersc9/kokkos/4.3.00/gpu/include/Kokkos_Macros.hpp:162:2: error: #error "Compiling with GCC version earlier than 8.2.0 is not supported."
+ #error "Compiling with GCC version earlier than 8.2.0 is not supported."
+  ^~~~~
+make[2]: *** [CMakeFiles/hydrogen_simulator_2d.dir/build.make:76: CMakeFiles/hydrogen_simulator_2d.dir/hydrogen_simulator_2d.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/hydrogen_simulator_2d.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

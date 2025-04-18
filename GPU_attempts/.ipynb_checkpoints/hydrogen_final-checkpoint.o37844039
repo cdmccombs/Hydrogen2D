@@ -1,0 +1,321 @@
+INITIAL ENVIRONMENT:
+gcc (SUSE Linux) 13.2.1 20240206 [revision 67ac78caf31f7cb3202177e6428a46d829b70f23]
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2024 NVIDIA Corporation
+Built on Thu_Mar_28_02:18:24_PDT_2024
+Cuda compilation tools, release 12.4, V12.4.131
+Build cuda_12.4.r12.4/compiler.34097967_0
+=== Testing simple compilation with system compiler ===
+Basic compilation works with: g++ (SUSE Linux) 13.2.1 20240206 [revision 67ac78caf31f7cb3202177e6428a46d829b70f23]
+Simple test program - compiler works!
+CUDA is NOT enabled.
+=== Testing CUDA compilation with system compiler ===
+CUDA compilation works with: nvcc: NVIDIA (R) Cuda compiler driver
+CUDA test program
+Found 4 CUDA devices
+CUDA kernel executed
+=== Testing with PrgEnv-gnu module ===
+Using compilers:
+CC: /opt/cray/pe/gcc-native/13/bin/gcc (gcc (SUSE Linux) 13.2.1 20240206 [revision 67ac78caf31f7cb3202177e6428a46d829b70f23])
+CXX: /opt/cray/pe/gcc-native/13/bin/g++ (g++ (SUSE Linux) 13.2.1 20240206 [revision 67ac78caf31f7cb3202177e6428a46d829b70f23])
+CUDACXX: /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/nvcc (nvcc: NVIDIA (R) Cuda compiler driver)
+-- The CXX compiler identification is GNU 13.2.1
+-- The CUDA compiler identification is NVIDIA 12.4.131
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/cray/pe/gcc-native/13/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- Enabled Kokkos devices: OPENMP;CUDA
+-- kokkos_launch_compiler is enabled globally. C++ compiler commands with -DKOKKOS_DEPENDENCE will be redirected to the appropriate compiler for Kokkos
+-- CXX compiler: /opt/cray/pe/gcc-native/13/bin/g++ (ID: GNU 13.2.1)
+-- CUDA compiler: /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/nvcc (ID: NVIDIA 12.4.131)
+-- Configuring done (6.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos
+CMake configuration succeeded!
+/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -S/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos -B/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos --check-build-system CMakeFiles/Makefile.cmake 0
+/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_progress_start /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+make  -f CMakeFiles/kokkos_test.dir/build.make CMakeFiles/kokkos_test.dir/depend
+make[2]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+cd /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos && /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_depends "Unix Makefiles" /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles/kokkos_test.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+make  -f CMakeFiles/kokkos_test.dir/build.make CMakeFiles/kokkos_test.dir/build
+make[2]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+[ 25%] Building CXX object CMakeFiles/kokkos_test.dir/kokkos_test.cpp.o
+/global/common/software/nersc9/kokkos/4.3.00/gpu/bin/kokkos_launch_compiler /global/common/software/nersc9/kokkos/4.3.00/gpu/bin/nvcc_wrapper /opt/cray/pe/gcc-native/13/bin/g++ /opt/cray/pe/gcc-native/13/bin/g++ -DKOKKOS_DEPENDENCE -isystem /global/common/software/nersc9/kokkos/4.3.00/gpu/include -isystem /opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2/include -O3 -DNDEBUG -std=c++17 -extended-lambda -Wext-lambda-captures-this -arch=sm_80 -fopenmp -MD -MT CMakeFiles/kokkos_test.dir/kokkos_test.cpp.o -MF CMakeFiles/kokkos_test.dir/kokkos_test.cpp.o.d -o CMakeFiles/kokkos_test.dir/kokkos_test.cpp.o -c /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/kokkos_test.cpp
+[ 50%] Linking CXX executable kokkos_test
+/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_link_script CMakeFiles/kokkos_test.dir/link.txt --verbose=1
+/global/common/software/nersc9/kokkos/4.3.00/gpu/bin/kokkos_launch_compiler /global/common/software/nersc9/kokkos/4.3.00/gpu/bin/nvcc_wrapper /opt/cray/pe/gcc-native/13/bin/g++ /opt/cray/pe/gcc-native/13/bin/g++ -O3 -DNDEBUG -DKOKKOS_DEPENDENCE -arch=sm_80 CMakeFiles/kokkos_test.dir/kokkos_test.cpp.o -o kokkos_test  -Wl,-rpath,/opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2/lib64 /global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/libkokkoscontainers.a /global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/libkokkoscore.a /usr/lib64/libcuda.so /opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2/lib64/libcudart.so -ldl /usr/lib64/gcc/x86_64-suse-linux/13/libgomp.so /usr/lib64/libpthread.so /global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/libkokkossimd.a
+make[2]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+[ 50%] Built target kokkos_test
+make  -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/depend
+make[2]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+cd /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos && /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_depends "Unix Makefiles" /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles/cuda_test.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+make  -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/build
+make[2]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+[ 75%] Building CUDA object CMakeFiles/cuda_test.dir/cuda_test.cu.o
+/global/common/software/nersc9/kokkos/4.3.00/gpu/bin/kokkos_launch_compiler /global/common/software/nersc9/kokkos/4.3.00/gpu/bin/nvcc_wrapper /opt/cray/pe/gcc-native/13/bin/g++ /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/nvcc -forward-unknown-to-host-compiler -ccbin=/opt/cray/pe/gcc-native/13/bin/g++   -O3 -DNDEBUG -std=c++14 "--generate-code=arch=compute_80,code=[compute_80,sm_80]" -MD -MT CMakeFiles/cuda_test.dir/cuda_test.cu.o -MF CMakeFiles/cuda_test.dir/cuda_test.cu.o.d -x cu -c /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/cuda_test.cu -o CMakeFiles/cuda_test.dir/cuda_test.cu.o
+[100%] Linking CUDA executable cuda_test
+/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_link_script CMakeFiles/cuda_test.dir/link.txt --verbose=1
+/global/common/software/nersc9/kokkos/4.3.00/gpu/bin/kokkos_launch_compiler /global/common/software/nersc9/kokkos/4.3.00/gpu/bin/nvcc_wrapper /opt/cray/pe/gcc-native/13/bin/g++ /opt/cray/pe/gcc-native/13/bin/g++ @CMakeFiles/cuda_test.dir/objects1.rsp -o cuda_test @CMakeFiles/cuda_test.dir/linkLibs.rsp -L"/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib/stubs" -L"/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib"
+make[2]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+[100%] Built target cuda_test
+make[1]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_progress_start /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles 0
+=== Running Kokkos test ===
+Simple test program - compiler works!
+CUDA is NOT enabled.
+=== Running CUDA test ===
+CUDA test program
+Found 4 CUDA devices
+CUDA kernel executed
+=== Testing with gcc-native module ===
+Using compilers:
+CC: /opt/cray/pe/gcc-native/13/bin/gcc (gcc (SUSE Linux) 13.2.1 20240206 [revision 67ac78caf31f7cb3202177e6428a46d829b70f23])
+CXX: /opt/cray/pe/gcc-native/13/bin/g++ (g++ (SUSE Linux) 13.2.1 20240206 [revision 67ac78caf31f7cb3202177e6428a46d829b70f23])
+CUDACXX: /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/nvcc (nvcc: NVIDIA (R) Cuda compiler driver)
+Testing direct compilation with gcc-native:
+Direct compilation failed!
+-- The CXX compiler identification is GNU 13.2.1
+-- The CUDA compiler identification is NVIDIA 12.4.131
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/cray/pe/gcc-native/13/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- Enabled Kokkos devices: OPENMP;CUDA
+-- kokkos_launch_compiler is enabled globally. C++ compiler commands with -DKOKKOS_DEPENDENCE will be redirected to the appropriate compiler for Kokkos
+-- CXX compiler: /opt/cray/pe/gcc-native/13/bin/g++ (ID: GNU 13.2.1)
+-- CUDA compiler: /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/nvcc (ID: NVIDIA 12.4.131)
+-- Configuring done (6.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos
+CMake configuration succeeded!
+/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -S/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos -B/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos --check-build-system CMakeFiles/Makefile.cmake 0
+/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_progress_start /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+make  -f CMakeFiles/kokkos_test.dir/build.make CMakeFiles/kokkos_test.dir/depend
+make[2]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+cd /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos && /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_depends "Unix Makefiles" /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles/kokkos_test.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+make  -f CMakeFiles/kokkos_test.dir/build.make CMakeFiles/kokkos_test.dir/build
+make[2]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+[ 25%] Building CXX object CMakeFiles/kokkos_test.dir/kokkos_test.cpp.o
+/global/common/software/nersc9/kokkos/4.3.00/gpu/bin/kokkos_launch_compiler /global/common/software/nersc9/kokkos/4.3.00/gpu/bin/nvcc_wrapper /opt/cray/pe/gcc-native/13/bin/g++ /opt/cray/pe/gcc-native/13/bin/g++ -DKOKKOS_DEPENDENCE -isystem /global/common/software/nersc9/kokkos/4.3.00/gpu/include -isystem /opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2/include -O3 -DNDEBUG -std=c++17 -extended-lambda -Wext-lambda-captures-this -arch=sm_80 -fopenmp -MD -MT CMakeFiles/kokkos_test.dir/kokkos_test.cpp.o -MF CMakeFiles/kokkos_test.dir/kokkos_test.cpp.o.d -o CMakeFiles/kokkos_test.dir/kokkos_test.cpp.o -c /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/kokkos_test.cpp
+[ 50%] Linking CXX executable kokkos_test
+/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_link_script CMakeFiles/kokkos_test.dir/link.txt --verbose=1
+/global/common/software/nersc9/kokkos/4.3.00/gpu/bin/kokkos_launch_compiler /global/common/software/nersc9/kokkos/4.3.00/gpu/bin/nvcc_wrapper /opt/cray/pe/gcc-native/13/bin/g++ /opt/cray/pe/gcc-native/13/bin/g++ -O3 -DNDEBUG -DKOKKOS_DEPENDENCE -arch=sm_80 CMakeFiles/kokkos_test.dir/kokkos_test.cpp.o -o kokkos_test  -Wl,-rpath,/opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2/lib64 /global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/libkokkoscontainers.a /global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/libkokkoscore.a /usr/lib64/libcuda.so /opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/12.2/lib64/libcudart.so -ldl /usr/lib64/gcc/x86_64-suse-linux/13/libgomp.so /usr/lib64/libpthread.so /global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/libkokkossimd.a
+make[2]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+[ 50%] Built target kokkos_test
+make  -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/depend
+make[2]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+cd /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos && /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_depends "Unix Makefiles" /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles/cuda_test.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+make  -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/build
+make[2]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+[ 75%] Building CUDA object CMakeFiles/cuda_test.dir/cuda_test.cu.o
+/global/common/software/nersc9/kokkos/4.3.00/gpu/bin/kokkos_launch_compiler /global/common/software/nersc9/kokkos/4.3.00/gpu/bin/nvcc_wrapper /opt/cray/pe/gcc-native/13/bin/g++ /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/nvcc -forward-unknown-to-host-compiler -ccbin=/opt/cray/pe/gcc-native/13/bin/g++   -O3 -DNDEBUG -std=c++14 "--generate-code=arch=compute_80,code=[compute_80,sm_80]" -MD -MT CMakeFiles/cuda_test.dir/cuda_test.cu.o -MF CMakeFiles/cuda_test.dir/cuda_test.cu.o.d -x cu -c /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/cuda_test.cu -o CMakeFiles/cuda_test.dir/cuda_test.cu.o
+[100%] Linking CUDA executable cuda_test
+/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_link_script CMakeFiles/cuda_test.dir/link.txt --verbose=1
+/global/common/software/nersc9/kokkos/4.3.00/gpu/bin/kokkos_launch_compiler /global/common/software/nersc9/kokkos/4.3.00/gpu/bin/nvcc_wrapper /opt/cray/pe/gcc-native/13/bin/g++ /opt/cray/pe/gcc-native/13/bin/g++ @CMakeFiles/cuda_test.dir/objects1.rsp -o cuda_test @CMakeFiles/cuda_test.dir/linkLibs.rsp -L"/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib/stubs" -L"/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib"
+make[2]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+[100%] Built target cuda_test
+make[1]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos'
+/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_progress_start /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles 0
+=== Running Kokkos test ===
+Simple test program - compiler works!
+CUDA is NOT enabled.
+=== Running CUDA test ===
+CUDA test program
+Found 4 CUDA devices
+CUDA kernel executed
+===== DIAGNOSTIC INFORMATION =====
+Current modules:
+Compiler versions:
+gcc (SUSE Linux) 13.2.1 20240206 [revision 67ac78caf31f7cb3202177e6428a46d829b70f23]
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+g++ (SUSE Linux) 13.2.1 20240206 [revision 67ac78caf31f7cb3202177e6428a46d829b70f23]
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2024 NVIDIA Corporation
+Built on Thu_Mar_28_02:18:24_PDT_2024
+Cuda compilation tools, release 12.4, V12.4.131
+Build cuda_12.4.r12.4/compiler.34097967_0
+Kokkos library paths:
+total 1820
+drwxrwsr-x 20 ncicd swowner   8192 Apr 19  2024 .
+drwxrwsr-x  5 ncicd swowner    512 Apr 19  2024 ..
+drwxrwsr-x  2 ncicd ncicd     2048 Apr 19  2024 Cuda
+drwxrwsr-x  2 ncicd ncicd     2048 Apr 19  2024 decl
+drwxrwsr-x  3 ncicd ncicd      512 Apr 19  2024 desul
+drwxrwsr-x  2 ncicd ncicd     2048 Apr 19  2024 fwd
+drwxrwsr-x  2 ncicd ncicd     2048 Apr 19  2024 HIP
+drwxrwsr-x  2 ncicd ncicd      512 Apr 19  2024 HPX
+drwxrwsr-x  2 ncicd ncicd     8192 Apr 19  2024 impl
+-rw-rw-r--  1 ncicd ncicd     3253 Apr 19  2024 Kokkos_Abort.hpp
+-rw-rw-r--  1 ncicd ncicd     1748 Apr 19  2024 Kokkos_AcquireUniqueTokenImpl.hpp
+-rw-rw-r--  1 ncicd ncicd     2670 Apr 19  2024 Kokkos_AnonymousSpace.hpp
+-rw-rw-r--  1 ncicd ncicd    12128 Apr 19  2024 Kokkos_Array.hpp
+-rw-rw-r--  1 ncicd ncicd     3453 Apr 19  2024 Kokkos_Assert.hpp
+-rw-rw-r--  1 ncicd ncicd     1731 Apr 19  2024 Kokkos_Atomic.hpp
+-rw-rw-r--  1 ncicd ncicd     1145 Apr 19  2024 Kokkos_Atomics_Desul_Config.hpp
+-rw-rw-r--  1 ncicd ncicd    12981 Apr 19  2024 Kokkos_Atomics_Desul_Volatile_Wrapper.hpp
+-rw-rw-r--  1 ncicd ncicd    14054 Apr 19  2024 Kokkos_Atomics_Desul_Wrapper.hpp
+-rw-rw-r--  1 ncicd ncicd    15322 Apr 19  2024 Kokkos_BitManipulation.hpp
+-rw-rw-r--  1 ncicd ncicd    14589 Apr 19  2024 Kokkos_Bitset.hpp
+-rw-rw-r--  1 ncicd ncicd     1297 Apr 19  2024 Kokkos_Clamp.hpp
+-rw-rw-r--  1 ncicd ncicd    36321 Apr 19  2024 Kokkos_Complex.hpp
+-rw-rw-r--  1 ncicd ncicd    15548 Apr 19  2024 Kokkos_Concepts.hpp
+-rw-rw-r--  1 ncicd ncicd   161095 Apr 19  2024 Kokkos_CopyViews.hpp
+-rw-rw-r--  1 ncicd ncicd      667 Apr 19  2024 KokkosCore_Config_DeclareBackend.hpp
+-rw-rw-r--  1 ncicd ncicd      649 Apr 19  2024 KokkosCore_Config_FwdBackend.hpp
+-rw-rw-r--  1 ncicd ncicd     4259 Apr 19  2024 KokkosCore_config.h
+-rw-rw-r--  1 ncicd ncicd      620 Apr 19  2024 KokkosCore_Config_SetupBackend.hpp
+-rw-rw-r--  1 ncicd ncicd    14723 Apr 19  2024 Kokkos_Core_fwd.hpp
+-rw-rw-r--  1 ncicd ncicd    11224 Apr 19  2024 Kokkos_Core.hpp
+-rw-rw-r--  1 ncicd ncicd    14044 Apr 19  2024 Kokkos_Crs.hpp
+-rw-rw-r--  1 ncicd ncicd     3495 Apr 19  2024 Kokkos_DetectionIdiom.hpp
+-rw-rw-r--  1 ncicd ncicd    50601 Apr 19  2024 Kokkos_DualView.hpp
+-rw-rw-r--  1 ncicd ncicd    41156 Apr 19  2024 Kokkos_DynamicView.hpp
+-rw-rw-r--  1 ncicd ncicd   101322 Apr 19  2024 Kokkos_DynRankView.hpp
+-rw-rw-r--  1 ncicd ncicd     5712 Apr 19  2024 Kokkos_ErrorReporter.hpp
+-rw-rw-r--  1 ncicd ncicd    46544 Apr 19  2024 Kokkos_ExecPolicy.hpp
+-rw-rw-r--  1 ncicd ncicd     3801 Apr 19  2024 KokkosExp_InterOp.hpp
+-rw-rw-r--  1 ncicd ncicd    17992 Apr 19  2024 KokkosExp_MDRangePolicy.hpp
+-rw-rw-r--  1 ncicd ncicd     4626 Apr 19  2024 Kokkos_Extents.hpp
+-rw-rw-r--  1 ncicd ncicd     2628 Apr 19  2024 Kokkos_Functional.hpp
+-rw-rw-r--  1 ncicd ncicd    15366 Apr 19  2024 Kokkos_Future.hpp
+-rw-rw-r--  1 ncicd ncicd     1302 Apr 19  2024 Kokkos_Graph_fwd.hpp
+-rw-rw-r--  1 ncicd ncicd     6508 Apr 19  2024 Kokkos_Graph.hpp
+-rw-rw-r--  1 ncicd ncicd    19423 Apr 19  2024 Kokkos_GraphNode.hpp
+-rw-rw-r--  1 ncicd ncicd     1071 Apr 19  2024 Kokkos_Half.hpp
+-rw-rw-r--  1 ncicd ncicd     7086 Apr 19  2024 Kokkos_HostSpace.hpp
+-rw-rw-r--  1 ncicd ncicd     4149 Apr 19  2024 Kokkos_hwloc.hpp
+-rw-rw-r--  1 ncicd ncicd    14508 Apr 19  2024 Kokkos_Layout.hpp
+-rw-rw-r--  1 ncicd ncicd    20409 Apr 19  2024 Kokkos_Macros.hpp
+-rw-rw-r--  1 ncicd ncicd     2496 Apr 19  2024 Kokkos_MathematicalConstants.hpp
+-rw-rw-r--  1 ncicd ncicd    22618 Apr 19  2024 Kokkos_MathematicalFunctions.hpp
+-rw-rw-r--  1 ncicd ncicd    47666 Apr 19  2024 Kokkos_MathematicalSpecialFunctions.hpp
+-rw-rw-r--  1 ncicd ncicd    28513 Apr 19  2024 Kokkos_MemoryPool.hpp
+-rw-rw-r--  1 ncicd ncicd     3520 Apr 19  2024 Kokkos_MemoryTraits.hpp
+-rw-rw-r--  1 ncicd ncicd     5295 Apr 19  2024 Kokkos_MinMax.hpp
+-rw-rw-r--  1 ncicd ncicd      982 Apr 19  2024 Kokkos_NestedSort.hpp
+-rw-rw-r--  1 ncicd ncicd    14887 Apr 19  2024 Kokkos_NumericTraits.hpp
+-rw-rw-r--  1 ncicd ncicd    82554 Apr 19  2024 Kokkos_OffsetView.hpp
+-rw-rw-r--  1 ncicd ncicd    16678 Apr 19  2024 Kokkos_Pair.hpp
+-rw-rw-r--  1 ncicd ncicd    18237 Apr 19  2024 Kokkos_Parallel.hpp
+-rw-rw-r--  1 ncicd ncicd    62767 Apr 19  2024 Kokkos_Parallel_Reduce.hpp
+-rw-rw-r--  1 ncicd ncicd     1581 Apr 19  2024 Kokkos_PointerOwnership.hpp
+-rw-rw-r--  1 ncicd ncicd     1606 Apr 19  2024 Kokkos_Printf.hpp
+-rw-rw-r--  1 ncicd ncicd     1736 Apr 19  2024 Kokkos_Profiling_ProfileSection.hpp
+-rw-rw-r--  1 ncicd ncicd     1495 Apr 19  2024 Kokkos_Profiling_ScopedRegion.hpp
+-rw-rw-r--  1 ncicd ncicd    56037 Apr 19  2024 Kokkos_Random.hpp
+-rw-rw-r--  1 ncicd ncicd     1535 Apr 19  2024 Kokkos_Rank.hpp
+-rw-rw-r--  1 ncicd ncicd    14127 Apr 19  2024 Kokkos_ReductionIdentity.hpp
+-rw-rw-r--  1 ncicd ncicd    66052 Apr 19  2024 Kokkos_ScatterView.hpp
+-rw-rw-r--  1 ncicd ncicd     5910 Apr 19  2024 Kokkos_ScratchSpace.hpp
+-rw-rw-r--  1 ncicd ncicd    90240 Apr 19  2024 Kokkos_SIMD_AVX2.hpp
+-rw-rw-r--  1 ncicd ncicd    93321 Apr 19  2024 Kokkos_SIMD_AVX512.hpp
+-rw-rw-r--  1 ncicd ncicd    10234 Apr 19  2024 Kokkos_SIMD_Common.hpp
+-rw-rw-r--  1 ncicd ncicd    11805 Apr 19  2024 Kokkos_SIMD_Common_Math.hpp
+-rw-rw-r--  1 ncicd ncicd     5034 Apr 19  2024 Kokkos_SIMD.hpp
+-rw-rw-r--  1 ncicd ncicd    74072 Apr 19  2024 Kokkos_SIMD_NEON.hpp
+-rw-rw-r--  1 ncicd ncicd    16987 Apr 19  2024 Kokkos_SIMD_Scalar.hpp
+-rw-rw-r--  1 ncicd ncicd     1087 Apr 19  2024 Kokkos_Sort.hpp
+-rw-rw-r--  1 ncicd ncicd    18586 Apr 19  2024 Kokkos_StaticCrsGraph.hpp
+-rw-rw-r--  1 ncicd ncicd     4422 Apr 19  2024 Kokkos_StdAlgorithms.hpp
+-rw-rw-r--  1 ncicd ncicd     1892 Apr 19  2024 Kokkos_Swap.hpp
+-rw-rw-r--  1 ncicd ncicd     5905 Apr 19  2024 Kokkos_TaskScheduler_fwd.hpp
+-rw-rw-r--  1 ncicd ncicd    24329 Apr 19  2024 Kokkos_TaskScheduler.hpp
+-rw-rw-r--  1 ncicd ncicd     2510 Apr 19  2024 Kokkos_Timer.hpp
+-rw-rw-r--  1 ncicd ncicd    23372 Apr 19  2024 Kokkos_Tuners.hpp
+-rw-rw-r--  1 ncicd ncicd     5757 Apr 19  2024 Kokkos_UniqueToken.hpp
+-rw-rw-r--  1 ncicd ncicd    34945 Apr 19  2024 Kokkos_UnorderedMap.hpp
+-rw-rw-r--  1 ncicd ncicd     9887 Apr 19  2024 Kokkos_Vector.hpp
+-rw-rw-r--  1 ncicd ncicd     1112 Apr 19  2024 Kokkos_Vectorization.hpp
+-rw-rw-r--  1 ncicd ncicd    80395 Apr 19  2024 Kokkos_View.hpp
+-rw-rw-r--  1 ncicd ncicd     7556 Apr 19  2024 Kokkos_WorkGraphPolicy.hpp
+drwxrwsr-x  2 ncicd ncicd     2048 Apr 19  2024 OpenACC
+drwxrwsr-x  2 ncicd ncicd     2048 Apr 19  2024 OpenMP
+drwxrwsr-x  2 ncicd ncicd     2048 Apr 19  2024 OpenMPTarget
+drwxrwsr-x  2 ncicd ncicd     2048 Apr 19  2024 Serial
+drwxrwsr-x  2 ncicd ncicd      512 Apr 19  2024 setup
+drwxrwsr-x  3 ncicd ncicd      512 Apr 19  2024 sorting
+drwxrwsr-x  3 ncicd ncicd     4096 Apr 19  2024 std_algorithms
+drwxrwsr-x  2 ncicd ncicd     2048 Apr 19  2024 SYCL
+drwxrwsr-x  2 ncicd ncicd     2048 Apr 19  2024 Threads
+drwxrwsr-x  2 ncicd ncicd     2048 Apr 19  2024 traits
+drwxrwsr-x  4 ncicd ncicd      512 Apr 19  2024 View
+total 2139
+drwxrwsr-x 3 ncicd swowner     512 Apr 19  2024 .
+drwxrwsr-x 5 ncicd swowner     512 Apr 19  2024 ..
+drwxrwsr-x 3 ncicd swowner     512 Apr 19  2024 cmake
+-rw-rw-r-- 1 ncicd swowner   59994 Apr 19  2024 libkokkoscontainers.a
+-rw-rw-r-- 1 ncicd swowner 2121724 Apr 19  2024 libkokkoscore.a
+-rw-rw-r-- 1 ncicd swowner    3980 Apr 19  2024 libkokkossimd.a
+Complete environment variables:
+CRAYPE_LINK_TYPE=dynamic
+CRAY_LD_LIBRARY_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64
+GCC_PREFIX=/usr/lib64/gcc/x86_64-suse-linux/13
+CRAY_LMOD_COMPILER=gnu/12.0
+PE_PRODUCT_LIST=CRAY_HPC_SDK
+CUDAHOSTCXX=/opt/cray/pe/gcc-native/13/bin/g++
+CUDACXX=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/nvcc
+LMOD_FAMILY_GCC_COMPILER=gcc-native
+JUPYTERHUB_OAUTH_ACCESS_SCOPES=["access:servers!server=cmccombs/perlmutter-login-node-base", "access:servers!user=cmccombs"]
+CRAY_CUDATOOLKIT_POST_LINK_OPTS=-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/lib64 -Wl,--as-needed,-lcupti,-lcudart,--no-as-needed -lcuda
+CC=/opt/cray/pe/gcc-native/13/bin/gcc
+NERSC_FAMILY_GCC_COMPILER=gcc-native
+PE_GCC_LEVEL=13
+__LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/lib64:1;/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64:1
+GCC_VERSION=13.2
+CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+NERSC_FAMILY_GCC_COMPILER_VERSION=13.2
+CRAY_CUDATOOLKIT_DIR=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+GCC_PATH=/opt/cray/pe/gcc-native/13/bin
+LMOD_FAMILY_GCC_COMPILER_VERSION=13.2
+NVHPC_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+CRAY_CUDATOOLKIT_INCLUDE_OPTS=-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/include
+CXX=/opt/cray/pe/gcc-native/13/bin/g++
+NERSC_FAMILY_CUDATOOLKIT_VERSION=12.4
+NERSC_FAMILY_CUDATOOLKIT=cudatoolkit
+CRAY_CUDATOOLKIT_PREFIX=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+LMOD_FAMILY_CUDATOOLKIT_VERSION=12.4
+LMOD_FAMILY_CUDATOOLKIT=cudatoolkit
+CUDA_VISIBLE_DEVICES=0,1,2,3
+CUDATOOLKIT_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+SLURM_JOB_ACCOUNT=m558_g
+NCCL_NET_GDR_LEVEL=PHB
+CRAY_CUDATOOLKIT_VERSION=24.5_12.4
+__LMOD_REF_COUNT_PE_PRODUCT_LIST=CRAY_HPC_SDK:1
+NCCL_SOCKET_IFNAME=hsn
+PE_GCC_EXTERNAL=native

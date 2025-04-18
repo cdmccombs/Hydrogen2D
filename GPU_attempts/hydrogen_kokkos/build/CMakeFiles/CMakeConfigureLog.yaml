@@ -1,0 +1,847 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Linux - 5.14.21-150500.55.97_13.0.78-cray_shasta_c - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/cray/pe/craype/2.7.32/bin/CC 
+      Build flags: -march=znver3
+      Id flags:  
+      
+      The output was:
+      0
+      No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+      Load a valid targeting module or set CRAY_CPU_TARGET
+      /usr/bin/ld: warning: /tmp/pgcudafatZglBzfkYNqUS.o: missing .note.GNU-stack section implies executable stack
+      /usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is NVHPC, found in:
+        /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/3.30.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1192 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCUDACompiler.cmake:75 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the CUDA compiler is NVIDIA using "" matched "nvcc: NVIDIA \\(R\\) Cuda compiler driver":
+      nvcc: NVIDIA (R) Cuda compiler driver
+      Copyright (c) 2005-2024 NVIDIA Corporation
+      Built on Thu_Mar_28_02:18:24_PDT_2024
+      Cuda compilation tools, release 12.4, V12.4.131
+      Build cuda_12.4.r12.4/compiler.34097967_0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:53 (__determine_compiler_id_test)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCUDACompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+      Compiler: /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/nvcc 
+      Build flags: 
+      Id flags: --keep;--keep-dir;tmp;-ccbin=/opt/cray/pe/craype/2.7.32/bin/CC -v
+      
+      The output was:
+      0
+      No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+      Load a valid targeting module or set CRAY_CPU_TARGET
+      #$ _NVVM_BRANCH_=nvvm
+      #$ _NVVM_BRANCH_SUFFIX_=
+      #$ _SPACE_= 
+      #$ _CUDART_=cudart
+      #$ _HERE_=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin
+      #$ _THERE_=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin
+      #$ _TARGET_SIZE_=
+      #$ _TARGET_DIR_=
+      #$ _TARGET_DIR_=targets/x86_64-linux
+      #$ TOP=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/..
+      #$ NVVMIR_LIBRARY_DIR=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../nvvm/libdevice
+      #$ LD_LIBRARY_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../lib:/global/common/software/nersc9/kokkos/4.3.00/gpu/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64:/opt/cray/libfabric/1.20.1/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib:/opt/cray/pe/gcc/12.2.0/snos/lib64:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/lapackpp-2024.05.31/lib64:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/blaspp-2024.05.31/lib64:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/adios2-2.10.2/lib64:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/c-blosc-1.21.1/lib64:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/boost-1.82.0/lib:/opt/cray/libfabric/default/lib64
+      #$ PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../nvvm/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin:/global/common/software/nersc9/cmake/3.30.2/bin:/global/common/software/nersc9/kokkos/4.3.00/gpu/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/compute-sanitizer:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/libnvvp:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/profilers/Nsight_Compute:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/profilers/Nsight_Systems/bin:/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin:/opt/cray/pe/gcc/12.2.0/bin:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/venvs/warpx-gpu/bin:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/ccache-4.10.2:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/adios2-2.10.2/bin:/global/common/software/nersc9/jupyter/ex/25-04/nersc-utils:/opt/nersc/pe/bin:/global/common/software/nersc/bin:/global/homes/c/cmccombs/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/opt/cray/pe/bin
+      #$ INCLUDES="-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"  
+      #$ LIBRARIES=  "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib"
+      #$ CUDAFE_FLAGS=
+      #$ PTXAS_FLAGS=
+      #$ rm tmp/a_dlink.reg.c
+      #$ "/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E --nvcchost -x c++ -D__CUDACC__ -D__NVCC__  "-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 --preinclude "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" 
+      No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+      Load a valid targeting module or set CRAY_CPU_TARGET
+      #$ cudafe++ --c++17 --pgc++ --gnu_version=130201 --pgi_version=240501 --pgi_llvm --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/3.30.2/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" 
+      #$ "/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E --nvcchost -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 --preinclude "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" 
+      No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+      Load a valid targeting module or set CRAY_CPU_TARGET
+      #$ cicc --c++17 --pgc++ --gnu_version=130201 --pgi_version=240501 --pgi_llvm --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/3.30.2/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"
+      #$ ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" 
+      #$ fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" 
+      #$ "/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c --nvcchost -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"   --no_preincludes -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" 
+      No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+      Load a valid targeting module or set CRAY_CPU_TARGET
+      #$ nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "/opt/cray/pe/craype/2.7.32/bin/CC"
+      #$ fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" 
+      #$ "/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c --nvcchost -x c++ -DFATBINFILE="\\"tmp/a_dlink.fatbin.c\\"" -DREGISTERLINKBINARYFILE="\\"tmp/a_dlink.reg.c\\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/crt/link.stub" -o "tmp/a_dlink.o" 
+      No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+      Load a valid targeting module or set CRAY_CPU_TARGET
+      #$ "/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" 
+      No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+      Load a valid targeting module or set CRAY_CPU_TARGET
+      /usr/bin/ld: warning: /tmp/pgcudafatWRnBqKsECS3E.o: missing .note.GNU-stack section implies executable stack
+      /usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+      
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "a.out"
+      
+      The CUDA compiler identification is NVIDIA, found in:
+        /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/3.30.2/CompilerIdCUDA/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/Internal/CMakeNVCCParseImplicitInfo.cmake:128 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCUDACompiler.cmake:242 (cmake_nvcc_parse_implicit_info)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CUDA nvcc implicit link information:
+        found 'PATH=' string: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../nvvm/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin:/global/common/software/nersc9/cmake/3.30.2/bin:/global/common/software/nersc9/kokkos/4.3.00/gpu/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/compute-sanitizer:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/libnvvp:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/profilers/Nsight_Compute:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/profilers/Nsight_Systems/bin:/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin:/opt/cray/pe/gcc/12.2.0/bin:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/venvs/warpx-gpu/bin:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/ccache-4.10.2:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/adios2-2.10.2/bin:/global/common/software/nersc9/jupyter/ex/25-04/nersc-utils:/opt/nersc/pe/bin:/global/common/software/nersc/bin:/global/homes/c/cmccombs/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/opt/cray/pe/bin]
+        found 'LIBRARIES=' string: ["-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib"]
+        found 'INCLUDES=' string: ["-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"  ]
+        considering line: [No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.]
+        considering line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        considering line: [rm tmp/a_dlink.reg.c]
+        considering line: ["/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E --nvcchost -x c++ -D__CUDACC__ -D__NVCC__  "-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 --preinclude "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.]
+        considering line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        considering line: [cudafe++ --c++17 --pgc++ --gnu_version=130201 --pgi_version=240501 --pgi_llvm --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/3.30.2/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: ["/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E --nvcchost -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 --preinclude "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: [No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.]
+        considering line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        considering line: [cicc --c++17 --pgc++ --gnu_version=130201 --pgi_version=240501 --pgi_llvm --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/3.30.2/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+        considering line: [ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" ]
+        considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+        considering line: ["/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c --nvcchost -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"   --no_preincludes -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+        considering line: [No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.]
+        considering line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        considering line: [nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "/opt/cray/pe/craype/2.7.32/bin/CC"]
+          ignoring nvlink line
+        considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+        considering line: ["/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c --nvcchost -x c++ -DFATBINFILE="\\"tmp/a_dlink.fatbin.c\\"" -DREGISTERLINKBINARYFILE="\\"tmp/a_dlink.reg.c\\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+        considering line: [No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.]
+        considering line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        considering line: ["/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          extracted link line: ["/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+        considering line: [No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.]
+        considering line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        considering line: [/usr/bin/ld: warning: /tmp/pgcudafatWRnBqKsECS3E.o: missing .note.GNU-stack section implies executable stack]
+        considering line: [/usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker]
+        considering line: []
+        extracted link launcher absolute path: [/opt/cray/pe/craype/2.7.32/bin/CC]
+      
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        link line: [cuda-fake-ld "/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          arg [cuda-fake-ld] ==> ignore
+          arg [/opt/cray/pe/craype/2.7.32/bin/CC] ==> ignore
+          arg [-D__CUDA_ARCH_LIST__=520] ==> ignore
+          arg [-D__NV_LEGACY_LAUNCH] ==> ignore
+          arg [-m64] ==> ignore
+          arg [-Wl,--start-group] ==> ignore
+          arg [tmp/a_dlink.o] ==> ignore
+          arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+          arg [-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs]
+          arg [-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib] ==> dir [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib]
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [-Wl,--end-group] ==> ignore
+          arg [-o] ==> ignore
+          arg [a.out] ==> ignore
+        collapse library dir [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs] ==> [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib] ==> [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+        implicit objs: []
+        implicit dirs: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib/stubs;/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/Internal/CMakeNVCCParseImplicitInfo.cmake:146 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCUDACompiler.cmake:242 (cmake_nvcc_parse_implicit_info)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CUDA nvcc include information:
+        found 'PATH=' string: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../nvvm/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin:/global/common/software/nersc9/cmake/3.30.2/bin:/global/common/software/nersc9/kokkos/4.3.00/gpu/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/compute-sanitizer:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/libnvvp:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/profilers/Nsight_Compute:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/profilers/Nsight_Systems/bin:/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/bin:/opt/cray/pe/mpich/8.1.30/bin:/opt/cray/libfabric/1.20.1/bin:/opt/cray/pe/craype/2.7.32/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin:/opt/cray/pe/gcc/12.2.0/bin:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/venvs/warpx-gpu/bin:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/ccache-4.10.2:/pscratch/sd/c/cmccombs/storage/sw/warpx/perlmutter/gpu/adios2-2.10.2/bin:/global/common/software/nersc9/jupyter/ex/25-04/nersc-utils:/opt/nersc/pe/bin:/global/common/software/nersc/bin:/global/homes/c/cmccombs/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/opt/cray/pe/bin]
+        found 'LIBRARIES=' string: ["-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib"]
+        found 'INCLUDES=' string: ["-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"  ]
+        considering line: [No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.]
+        considering line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        considering line: [rm tmp/a_dlink.reg.c]
+        considering line: ["/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E --nvcchost -x c++ -D__CUDACC__ -D__NVCC__  "-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 --preinclude "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.]
+        considering line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        considering line: [cudafe++ --c++17 --pgc++ --gnu_version=130201 --pgi_version=240501 --pgi_llvm --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/3.30.2/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: ["/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E --nvcchost -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 --preinclude "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: [No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.]
+        considering line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        considering line: [cicc --c++17 --pgc++ --gnu_version=130201 --pgi_version=240501 --pgi_llvm --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/3.30.2/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+        considering line: [ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" ]
+        considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+        considering line: ["/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c --nvcchost -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"   --no_preincludes -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+        considering line: [No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.]
+        considering line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        considering line: [nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "/opt/cray/pe/craype/2.7.32/bin/CC"]
+          ignoring nvlink line
+        considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+        considering line: ["/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c --nvcchost -x c++ -DFATBINFILE="\\"tmp/a_dlink.fatbin.c\\"" -DREGISTERLINKBINARYFILE="\\"tmp/a_dlink.reg.c\\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+        considering line: [No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.]
+        considering line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        considering line: ["/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          extracted link line: ["/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+        considering line: [No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.]
+        considering line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        considering line: [/usr/bin/ld: warning: /tmp/pgcudafatWRnBqKsECS3E.o: missing .note.GNU-stack section implies executable stack]
+        considering line: [/usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker]
+        considering line: []
+        extracted link launcher absolute path: [/opt/cray/pe/craype/2.7.32/bin/CC]
+      
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        link line: [cuda-fake-ld "/opt/cray/pe/craype/2.7.32/bin"/CC -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          arg [cuda-fake-ld] ==> ignore
+          arg [/opt/cray/pe/craype/2.7.32/bin/CC] ==> ignore
+          arg [-D__CUDA_ARCH_LIST__=520] ==> ignore
+          arg [-D__NV_LEGACY_LAUNCH] ==> ignore
+          arg [-m64] ==> ignore
+          arg [-Wl,--start-group] ==> ignore
+          arg [tmp/a_dlink.o] ==> ignore
+          arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+          arg [-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs]
+          arg [-L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib] ==> dir [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib]
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [-Wl,--end-group] ==> ignore
+          arg [-o] ==> ignore
+          arg [a.out] ==> ignore
+        collapse library dir [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib/stubs] ==> [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/lib] ==> [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+        implicit objs: []
+        implicit dirs: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib/stubs;/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-y4cyRt"
+      binary: "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-y4cyRt"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "80"
+      CMAKE_CXX_FLAGS: "-march=znver3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g -O0"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-y4cyRt'
+        
+        Run Build Command(s): /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_76ff7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_76ff7.dir/build.make CMakeFiles/cmTC_76ff7.dir/build
+        gmake[1]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-y4cyRt'
+        Building CXX object CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/cray/pe/craype/2.7.32/bin/CC   -march=znver3    -v -MD -MT CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o -c /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_VERSION=12.4.127
+        Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5
+        Export PGI=/opt/nvidia/hpc_sdk
+        Create file CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o.d
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -D__unix -D__unix__ -Dunix -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4A__ -D__SSE4_1__ -D__SSE4_2__ -D__ABM__ -D__ADX__ -D__AES__ -D__AVX__ -D__AVX2__ -D__BMI__ -D__BMI2__ -D__CLFLUSHOPT__ -D__CLWB__ -D__CLZERO__ -D__F16C__ -D__FMA__ -D__FSGSBASE__ -D__FXSR__ -D__LZCNT__ -D__MOVBE__ -D__MWAITX__ -D__PCLMUL__ -D__PKU__ -D__POPCNT__ -D__PRFCHW__ -D__RDPID__ -D__RDRND__ -D__RDSEED__ -D__LAHF_SAHF__ -D__SHA__ -D__VAES__ -D__VPCLMULQDQ__ -D__WBNOINVD__ -D__XSAVE__ -D__XSAVEC__ -D__XSAVEOPT__ -D__XSAVES__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE -I- -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/include/qd --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include-stdexec --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include --sys_include /usr/include/c++/13 --sys_include /usr/include/c++/13/x86_64-suse-linux --sys_include /usr/include/c++/13/backward --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include --sys_include /usr/local/include --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include-fixed --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/include --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D_ACCEL=201003 -D_OPENACC=201711 -DCUDA_VERSION=12040 -DPGI_TESLA_TARGET -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=130201 -D__pgnu_vsn=130201 --no_fixed_bp --accel --preinclude openacc_predef.h --dependencies_target_to_stdout CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o -D_NVHPC_RDC --dependencies_to_file CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o.d -q -o /tmp/nvc++E_nBA8d5Im9X.il /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -- /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -opt 2 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp znver3 -x 120 0x1000 -astype 0 -x 121 1 -fn /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -il /tmp/nvc++E_nBA8d5Im9X.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 119 0x20 -def __pgnu_vsn=130201 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 249 170 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -accel tesla -accel host -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -x 180 0x4000400 -x 121 0xc00 -x 186 0x80 -x 180 0x4000400 -x 121 0xc00 -x 194 0x40000 -x 163 0x1 -x 186 0x80000 -cudaver 12040 -x 176 0x100 -cudacap 80 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -x 176 0x100 -cudacap 80 -x 189 0x8000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -x 187 0x40000 -x 187 0x8000000 -x 60 512 -gnuvsn 130201 -x 69 0x200 -x 123 0x400 -cmdline '+nvc++ /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -tp=px -march=znver3 -tp znver3 -acc -gpu=cc80 -Bdynamic -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET -pgf90libs -fortranlibs -v -MD -MT CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o -c -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include' -asm /tmp/nvc++__nB6C-l1ViY.ll
+        NVC++/x86-64 Linux 24.5-1: compilation successful
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/share/llvm/bin/opt '-passes=default<O2>' -slp-vectorize-hor=true -memdep-block-scan-limit=160 -nvhpc-consider-undef=true -nvhpc-shuffle-opt -nvhpc-unswitch-loops-with-trip-count=2 -mcpu=znver3 /tmp/nvc++__nB6C-l1ViY.ll -S -o /tmp/nvc++U_nBke7c4Ofl.llvm
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/share/llvm/bin/llc /tmp/nvc++U_nBke7c4Ofl.llvm -march=x86-64 -mcpu=znver3 -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4a -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+avx2 -mattr=+f16c -mattr=+fma -mattr=+xsave -mattr=+xsaveopt -mattr=+xsavec -mattr=+xsaves -mattr=+popcnt -mattr=+sha -mattr=+aes -mattr=+pclmul -mattr=+clflushopt -mattr=+fsgsbase -mattr=+rdrnd -mattr=+bmi -mattr=+bmi2 -mattr=+lzcnt -mattr=+fxsr -mattr=+mwaitx -mattr=+clzero -mattr=+pku -mattr=+vaes -mattr=+vpclmulqdq -mattr=+adx -mattr=+clwb -mattr=+movbe -mattr=+prfchw -mattr=+rdpid -mattr=+rdseed -mattr=+sahf -mattr=+wbnoinvd -O2 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o
+        Unlinking /tmp/nvc++E_nBA8d5Im9X.il
+        Unlinking /tmp/nvc++o_nBQFJODNC0.s
+        Unlinking /tmp/nvc++__nB6C-l1ViY.ll
+        Unlinking /tmp/nvc++U_nBke7c4Ofl.llvm
+        Linking CXX executable cmTC_76ff7
+        /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76ff7.dir/link.txt --verbose=1
+        /opt/cray/pe/craype/2.7.32/bin/CC -march=znver3   -v CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_76ff7
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_VERSION=12.4.127
+        Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5
+        Export PGI=/opt/nvidia/hpc_sdk
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/13//crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/nvhpc.ld --dynamic-list=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/nvhpc.syms -L/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/lib -L/opt/cray/pe/mpich/8.1.30/gtl/lib -L/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64/stubs -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/lib64 -L/opt/cray/pe/dsmml/0.3.0/dsmml//lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/lib -L/usr/lib64 -L/usr/lib64/gcc/x86_64-suse-linux/13/ -Bdynamic CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o --as-needed -lcupti -lcudart --no-as-needed -lcuda --as-needed -lsci_nvidia_mpi --no-as-needed --as-needed -lsci_nvidia --no-as-needed -ldl --as-needed -lmpi_nvidia --no-as-needed -lmpi_gtl_cuda --as-needed -ldsmml --no-as-needed --disable-new-dtags -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -o cmTC_76ff7 -L/usr/lib64/gcc/x86_64-suse-linux/13//../../../../lib64 /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_cuda.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_host.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_acc.o -lacchost -laccdevaux -laccdevice -ldl -lcudadevice -lnvf -latomic -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lrt -lpthread -lgcc -lc -lgcc_s -lm /usr/lib64/gcc/x86_64-suse-linux/13//crtend.o /usr/lib64/crtn.o
+        /usr/bin/ld: warning: /tmp/pgcudafat_5oB67b_cZL4.o: missing .note.GNU-stack section implies executable stack
+        /usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+        gmake[1]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-y4cyRt'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=start
+        warn: unable to parse implicit include dirs!
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-y4cyRt']
+        ignore line: []
+        ignore line: [Run Build Command(s): /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_76ff7/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_76ff7.dir/build.make CMakeFiles/cmTC_76ff7.dir/build]
+        ignore line: [gmake[1]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-y4cyRt']
+        ignore line: [Building CXX object CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/cray/pe/craype/2.7.32/bin/CC   -march=znver3    -v -MD -MT CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o -c /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+        ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        ignore line: [Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_VERSION=12.4.127]
+        ignore line: [Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5]
+        ignore line: [Export PGI=/opt/nvidia/hpc_sdk]
+        ignore line: [Create file CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o.d]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -D__unix -D__unix__ -Dunix -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4A__ -D__SSE4_1__ -D__SSE4_2__ -D__ABM__ -D__ADX__ -D__AES__ -D__AVX__ -D__AVX2__ -D__BMI__ -D__BMI2__ -D__CLFLUSHOPT__ -D__CLWB__ -D__CLZERO__ -D__F16C__ -D__FMA__ -D__FSGSBASE__ -D__FXSR__ -D__LZCNT__ -D__MOVBE__ -D__MWAITX__ -D__PCLMUL__ -D__PKU__ -D__POPCNT__ -D__PRFCHW__ -D__RDPID__ -D__RDRND__ -D__RDSEED__ -D__LAHF_SAHF__ -D__SHA__ -D__VAES__ -D__VPCLMULQDQ__ -D__WBNOINVD__ -D__XSAVE__ -D__XSAVEC__ -D__XSAVEOPT__ -D__XSAVES__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE -I- -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/include/qd --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include-stdexec --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include --sys_include /usr/include/c++/13 --sys_include /usr/include/c++/13/x86_64-suse-linux --sys_include /usr/include/c++/13/backward --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include --sys_include /usr/local/include --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include-fixed --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/include --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D_ACCEL=201003 -D_OPENACC=201711 -DCUDA_VERSION=12040 -DPGI_TESLA_TARGET -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=130201 -D__pgnu_vsn=130201 --no_fixed_bp --accel --preinclude openacc_predef.h --dependencies_target_to_stdout CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o -D_NVHPC_RDC --dependencies_to_file CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o.d -q -o /tmp/nvc++E_nBA8d5Im9X.il /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -- /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -opt 2 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp znver3 -x 120 0x1000 -astype 0 -x 121 1 -fn /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -il /tmp/nvc++E_nBA8d5Im9X.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 119 0x20 -def __pgnu_vsn=130201 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 249 170 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -accel tesla -accel host -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -x 180 0x4000400 -x 121 0xc00 -x 186 0x80 -x 180 0x4000400 -x 121 0xc00 -x 194 0x40000 -x 163 0x1 -x 186 0x80000 -cudaver 12040 -x 176 0x100 -cudacap 80 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -x 176 0x100 -cudacap 80 -x 189 0x8000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -x 187 0x40000 -x 187 0x8000000 -x 60 512 -gnuvsn 130201 -x 69 0x200 -x 123 0x400 -cmdline '+nvc++ /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -tp=px -march=znver3 -tp znver3 -acc -gpu=cc80 -Bdynamic -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET -pgf90libs -fortranlibs -v -MD -MT CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o -c -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include' -asm /tmp/nvc++__nB6C-l1ViY.ll]
+        ignore line: [NVC++/x86-64 Linux 24.5-1: compilation successful]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/share/llvm/bin/opt '-passes=default<O2>' -slp-vectorize-hor=true -memdep-block-scan-limit=160 -nvhpc-consider-undef=true -nvhpc-shuffle-opt -nvhpc-unswitch-loops-with-trip-count=2 -mcpu=znver3 /tmp/nvc++__nB6C-l1ViY.ll -S -o /tmp/nvc++U_nBke7c4Ofl.llvm]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/share/llvm/bin/llc /tmp/nvc++U_nBke7c4Ofl.llvm -march=x86-64 -mcpu=znver3 -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4a -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+avx2 -mattr=+f16c -mattr=+fma -mattr=+xsave -mattr=+xsaveopt -mattr=+xsavec -mattr=+xsaves -mattr=+popcnt -mattr=+sha -mattr=+aes -mattr=+pclmul -mattr=+clflushopt -mattr=+fsgsbase -mattr=+rdrnd -mattr=+bmi -mattr=+bmi2 -mattr=+lzcnt -mattr=+fxsr -mattr=+mwaitx -mattr=+clzero -mattr=+pku -mattr=+vaes -mattr=+vpclmulqdq -mattr=+adx -mattr=+clwb -mattr=+movbe -mattr=+prfchw -mattr=+rdpid -mattr=+rdseed -mattr=+sahf -mattr=+wbnoinvd -O2 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [Unlinking /tmp/nvc++E_nBA8d5Im9X.il]
+        ignore line: [Unlinking /tmp/nvc++o_nBQFJODNC0.s]
+        ignore line: [Unlinking /tmp/nvc++__nB6C-l1ViY.ll]
+        ignore line: [Unlinking /tmp/nvc++U_nBke7c4Ofl.llvm]
+        ignore line: [Linking CXX executable cmTC_76ff7]
+        ignore line: [/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76ff7.dir/link.txt --verbose=1]
+        ignore line: [/opt/cray/pe/craype/2.7.32/bin/CC -march=znver3   -v CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_76ff7]
+        ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+        ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        ignore line: [Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_VERSION=12.4.127]
+        ignore line: [Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5]
+        ignore line: [Export PGI=/opt/nvidia/hpc_sdk]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/13//crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/nvhpc.ld --dynamic-list=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/nvhpc.syms -L/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/lib -L/opt/cray/pe/mpich/8.1.30/gtl/lib -L/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64/stubs -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/lib64 -L/opt/cray/pe/dsmml/0.3.0/dsmml//lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/lib -L/usr/lib64 -L/usr/lib64/gcc/x86_64-suse-linux/13/ -Bdynamic CMakeFiles/cmTC_76ff7.dir/CMakeCXXCompilerABI.cpp.o --as-needed -lcupti -lcudart --no-as-needed -lcuda --as-needed -lsci_nvidia_mpi --no-as-needed --as-needed -lsci_nvidia --no-as-needed -ldl --as-needed -lmpi_nvidia --no-as-needed -lmpi_gtl_cuda --as-needed -ldsmml --no-as-needed --disable-new-dtags -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -o cmTC_76ff7 -L/usr/lib64/gcc/x86_64-suse-linux/13//../../../../lib64 /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_cuda.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_host.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_acc.o -lacchost -laccdevaux -laccdevice -ldl -lcudadevice -lnvf -latomic -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lrt -lpthread -lgcc -lc -lgcc_s -lm /usr/lib64/gcc/x86_64-suse-linux/13//crtend.o /usr/lib64/crtn.o]
+        link line: [/usr/bin/ld: warning: /tmp/pgcudafat_5oB67b_cZL4.o: missing .note.GNU-stack section implies executable stack]
+          arg [/usr/bin/ld:] ==> ignore
+          arg [warning:] ==> ignore
+          arg [/tmp/pgcudafat_5oB67b_cZL4.o:] ==> ignore
+          arg [missing] ==> ignore
+          arg [.note.GNU-stack] ==> ignore
+          arg [section] ==> ignore
+          arg [implies] ==> ignore
+          arg [executable] ==> ignore
+          arg [stack] ==> ignore
+        linker tool for 'CXX': /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CXX compiler's linker: "/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld" "-v"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CXX compiler's linker: "/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld" "-V"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CXX compiler's linker: "/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld" "--version"
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CUDA compiler ABI info"
+    directories:
+      source: "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-hAwEXq"
+      binary: "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-hAwEXq"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "80"
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_CUDA_RUNTIME_LIBRARY: "Static"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CUDA_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-hAwEXq'
+        
+        Run Build Command(s): /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e035e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e035e.dir/build.make CMakeFiles/cmTC_e035e.dir/build
+        gmake[1]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-hAwEXq'
+        Building CUDA object CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/nvcc -forward-unknown-to-host-compiler -ccbin=/opt/cray/pe/craype/2.7.32/bin/CC   "--generate-code=arch=compute_80,code=[compute_80,sm_80]"   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_VERSION=12.4.127
+        Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5
+        Export PGI=/opt/nvidia/hpc_sdk
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -D__unix -D__unix__ -Dunix -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__FXSR__ -D__PCLMUL__ -D__POPCNT__ -D__LAHF_SAHF__ -D__XSAVE__ -D__XSAVEOPT__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE -I- -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/include/qd --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include-stdexec --sys_include /usr/include/c++/13 --sys_include /usr/include/c++/13/x86_64-suse-linux --sys_include /usr/include/c++/13/backward --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include --sys_include /usr/local/include --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include-fixed --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/include --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D_ACCEL=201003 -D_OPENACC=201711 -DCUDA_VERSION=12040 -DPGI_TESLA_TARGET -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET -D__CUDA_ARCH__=800 -D__CUDA_ARCH_LIST__=800 -D__NV_LEGACY_LAUNCH -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__ -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h -D_NO_PGI_GNU_BUILTINS -D_PGI_NOBUILTINS --gnu_version=130201 -D__pgnu_vsn=130201 --no_fixed_bp --preprocess -D__PREPROCESS_ONLY__ --nvcchost --preinclude _cplus_nvcc.h -D__NVCC_HOST__ --accel --preinclude openacc_predef.h --preinclude cuda_runtime.h -q -o /tmp/tmpxft_0001b3c9_00000000-7_CMakeCUDACompilerABI.cpp1.ii /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCUDACompilerABI.cu --
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_VERSION=12.4.127
+        Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5
+        Export PGI=/opt/nvidia/hpc_sdk
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -D__unix -D__unix__ -Dunix -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__FXSR__ -D__PCLMUL__ -D__POPCNT__ -D__LAHF_SAHF__ -D__XSAVE__ -D__XSAVEOPT__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE -I- -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/include/qd --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include-stdexec --sys_include /usr/include/c++/13 --sys_include /usr/include/c++/13/x86_64-suse-linux --sys_include /usr/include/c++/13/backward --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include --sys_include /usr/local/include --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include-fixed --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/include --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D_ACCEL=201003 -D_OPENACC=201711 -DCUDA_VERSION=12040 -DPGI_TESLA_TARGET -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET -D__CUDA_ARCH_LIST__=800 -D__NV_LEGACY_LAUNCH -D__CUDACC__ -D__NVCC__ -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h -D_NO_PGI_GNU_BUILTINS -D_PGI_NOBUILTINS --gnu_version=130201 -D__pgnu_vsn=130201 --no_fixed_bp --preprocess -D__PREPROCESS_ONLY__ --nvcchost --preinclude _cplus_nvcc.h -D__NVCC_HOST__ --accel --preinclude openacc_predef.h --preinclude cuda_runtime.h -q -o /tmp/tmpxft_0001b3c9_00000000-5_CMakeCUDACompilerABI.cpp4.ii /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCUDACompilerABI.cu --
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_VERSION=12.4.127
+        Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5
+        Export PGI=/opt/nvidia/hpc_sdk
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -D__unix -D__unix__ -Dunix -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__FXSR__ -D__PCLMUL__ -D__POPCNT__ -D__LAHF_SAHF__ -D__XSAVE__ -D__XSAVEOPT__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE -I- -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/include/qd --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include-stdexec --sys_include /usr/include/c++/13 --sys_include /usr/include/c++/13/x86_64-suse-linux --sys_include /usr/include/c++/13/backward --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include --sys_include /usr/local/include --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include-fixed --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/include --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D_ACCEL=201003 -D_OPENACC=201711 -DCUDA_VERSION=12040 -DPGI_TESLA_TARGET -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET -D__CUDA_ARCH__=800 -D__CUDA_ARCH_LIST__=800 -D__NV_LEGACY_LAUNCH -DCUDA_DOUBLE_MATH_FUNCTIONS --gnu_version=130201 -D__pgnu_vsn=130201 --no_fixed_bp --nvcchost --preinclude _cplus_nvcc.h -D__NVCC_HOST__ --accel --preinclude openacc_predef.h -q -o /tmp/nvc++uJqB8q1M4fjd.il /tmp/tmpxft_0001b3c9_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -- /tmp/tmpxft_0001b3c9_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -opt 2 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp px -x 120 0x1000 -astype 0 -x 121 1 -fn /tmp/tmpxft_0001b3c9_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -il /tmp/nvc++uJqB8q1M4fjd.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 119 0x20 -def __pgnu_vsn=130201 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 249 170 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -accel tesla -accel host -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -x 180 0x4000400 -x 121 0xc00 -x 186 0x80 -x 180 0x4000400 -x 121 0xc00 -x 194 0x40000 -x 163 0x1 -x 186 0x80000 -cudaver 12040 -x 176 0x100 -cudacap 80 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -x 176 0x100 -cudacap 80 -x 189 0x8000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -x 187 0x40000 -x 187 0x8000000 -x 60 512 -gnuvsn 130201 -x 69 0x200 -x 123 0x400 -x 118 0x2 -cmdline '+nvc++ /tmp/tmpxft_0001b3c9_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -tp=px --nvcchost -x c++ -acc -gpu=cc80 -Bdynamic -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET -pgf90libs -fortranlibs -D__CUDA_ARCH__=800 -D__CUDA_ARCH_LIST__=800 -D__NV_LEGACY_LAUNCH -c -DCUDA_DOUBLE_MATH_FUNCTIONS -v -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include --no_preincludes -m64 -o CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include' -asm /tmp/nvc++uJqB8BADpRzx.ll
+        NVC++/x86-64 Linux 24.5-1: compilation successful
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/share/llvm/bin/opt '-passes=default<O2>' -slp-vectorize-hor=true -memdep-block-scan-limit=160 -nvhpc-consider-undef=true -nvhpc-unswitch-loops-with-trip-count=2 -mcpu=x86-64 /tmp/nvc++uJqB8BADpRzx.ll -S -o /tmp/nvc++0JqBC7Tc8qD-.llvm
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/share/llvm/bin/llc /tmp/nvc++0JqBC7Tc8qD-.llvm -march=x86-64 -mcpu=x86-64 -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+xsave -mattr=+xsaveopt -mattr=+popcnt -mattr=+pclmul -mattr=+fxsr -mattr=+sahf -O2 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o
+        Unlinking /tmp/nvc++uJqB8q1M4fjd.il
+        Unlinking /tmp/nvc++0JqBCyF3x_iT.s
+        Unlinking /tmp/nvc++uJqB8BADpRzx.ll
+        Unlinking /tmp/nvc++0JqBC7Tc8qD-.llvm
+        Linking CUDA executable cmTC_e035e
+        /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e035e.dir/link.txt --verbose=1
+        /opt/cray/pe/craype/2.7.32/bin/CC  -v -Wl,-v CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o -o cmTC_e035e  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib/stubs" -L"/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib"
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_VERSION=12.4.127
+        Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5
+        Export PGI=/opt/nvidia/hpc_sdk
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/13//crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/nvhpc.ld --dynamic-list=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/nvhpc.syms -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib/stubs -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib -L/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/lib -L/opt/cray/pe/mpich/8.1.30/gtl/lib -L/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64/stubs -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/lib64 -L/opt/cray/pe/dsmml/0.3.0/dsmml//lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/lib -L/usr/lib64 -L/usr/lib64/gcc/x86_64-suse-linux/13/ -Bdynamic -v CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl --as-needed -lcupti -lcudart --no-as-needed -lcuda --as-needed -lsci_nvidia_mpi --no-as-needed --as-needed -lsci_nvidia --no-as-needed -ldl --as-needed -lmpi_nvidia --no-as-needed -lmpi_gtl_cuda --as-needed -ldsmml --no-as-needed --disable-new-dtags -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -o cmTC_e035e -L/usr/lib64/gcc/x86_64-suse-linux/13//../../../../lib64 /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_cuda.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_host.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_acc.o -lacchost -laccdevaux -laccdevice -ldl -lcudadevice -lnvf -latomic -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lrt -lpthread -lgcc -lc -lgcc_s -lm /usr/lib64/gcc/x86_64-suse-linux/13//crtend.o /usr/lib64/crtn.o
+        GNU ld (GNU Binutils; SUSE Linux Enterprise 15) 2.43.1.20241209-150100.7.52
+        /usr/bin/ld: warning: /tmp/pgcudafat2jrBIwJLkdkz.o: missing .note.GNU-stack section implies executable stack
+        /usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+        gmake[1]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-hAwEXq'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CUDA implicit include dir info: rv=start
+        warn: unable to parse implicit include dirs!
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CUDA implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-hAwEXq']
+        ignore line: []
+        ignore line: [Run Build Command(s): /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e035e/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e035e.dir/build.make CMakeFiles/cmTC_e035e.dir/build]
+        ignore line: [gmake[1]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-hAwEXq']
+        ignore line: [Building CUDA object CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o]
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/nvcc -forward-unknown-to-host-compiler -ccbin=/opt/cray/pe/craype/2.7.32/bin/CC   "--generate-code=arch=compute_80 code=[compute_80 sm_80]"   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o]
+        ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+        ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+        ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        ignore line: [Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_VERSION=12.4.127]
+        ignore line: [Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5]
+        ignore line: [Export PGI=/opt/nvidia/hpc_sdk]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -D__unix -D__unix__ -Dunix -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__FXSR__ -D__PCLMUL__ -D__POPCNT__ -D__LAHF_SAHF__ -D__XSAVE__ -D__XSAVEOPT__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE -I- -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/include/qd --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include-stdexec --sys_include /usr/include/c++/13 --sys_include /usr/include/c++/13/x86_64-suse-linux --sys_include /usr/include/c++/13/backward --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include --sys_include /usr/local/include --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include-fixed --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/include --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D_ACCEL=201003 -D_OPENACC=201711 -DCUDA_VERSION=12040 -DPGI_TESLA_TARGET -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET -D__CUDA_ARCH__=800 -D__CUDA_ARCH_LIST__=800 -D__NV_LEGACY_LAUNCH -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__ -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h -D_NO_PGI_GNU_BUILTINS -D_PGI_NOBUILTINS --gnu_version=130201 -D__pgnu_vsn=130201 --no_fixed_bp --preprocess -D__PREPROCESS_ONLY__ --nvcchost --preinclude _cplus_nvcc.h -D__NVCC_HOST__ --accel --preinclude openacc_predef.h --preinclude cuda_runtime.h -q -o /tmp/tmpxft_0001b3c9_00000000-7_CMakeCUDACompilerABI.cpp1.ii /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCUDACompilerABI.cu --]
+        ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+        ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        ignore line: [Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_VERSION=12.4.127]
+        ignore line: [Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5]
+        ignore line: [Export PGI=/opt/nvidia/hpc_sdk]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -D__unix -D__unix__ -Dunix -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__FXSR__ -D__PCLMUL__ -D__POPCNT__ -D__LAHF_SAHF__ -D__XSAVE__ -D__XSAVEOPT__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE -I- -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/include/qd --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include-stdexec --sys_include /usr/include/c++/13 --sys_include /usr/include/c++/13/x86_64-suse-linux --sys_include /usr/include/c++/13/backward --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include --sys_include /usr/local/include --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include-fixed --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/include --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D_ACCEL=201003 -D_OPENACC=201711 -DCUDA_VERSION=12040 -DPGI_TESLA_TARGET -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET -D__CUDA_ARCH_LIST__=800 -D__NV_LEGACY_LAUNCH -D__CUDACC__ -D__NVCC__ -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=4 -D__CUDACC_VER_BUILD__=131 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=4 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h -D_NO_PGI_GNU_BUILTINS -D_PGI_NOBUILTINS --gnu_version=130201 -D__pgnu_vsn=130201 --no_fixed_bp --preprocess -D__PREPROCESS_ONLY__ --nvcchost --preinclude _cplus_nvcc.h -D__NVCC_HOST__ --accel --preinclude openacc_predef.h --preinclude cuda_runtime.h -q -o /tmp/tmpxft_0001b3c9_00000000-5_CMakeCUDACompilerABI.cpp4.ii /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeCUDACompilerABI.cu --]
+        ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+        ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        ignore line: [Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_VERSION=12.4.127]
+        ignore line: [Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5]
+        ignore line: [Export PGI=/opt/nvidia/hpc_sdk]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -D__unix -D__unix__ -Dunix -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4_1__ -D__SSE4_2__ -D__AVX__ -D__FXSR__ -D__PCLMUL__ -D__POPCNT__ -D__LAHF_SAHF__ -D__XSAVE__ -D__XSAVEOPT__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE -I- -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/include/qd --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include-stdexec --sys_include /usr/include/c++/13 --sys_include /usr/include/c++/13/x86_64-suse-linux --sys_include /usr/include/c++/13/backward --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include --sys_include /usr/local/include --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include-fixed --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/include --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D_ACCEL=201003 -D_OPENACC=201711 -DCUDA_VERSION=12040 -DPGI_TESLA_TARGET -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET -D__CUDA_ARCH__=800 -D__CUDA_ARCH_LIST__=800 -D__NV_LEGACY_LAUNCH -DCUDA_DOUBLE_MATH_FUNCTIONS --gnu_version=130201 -D__pgnu_vsn=130201 --no_fixed_bp --nvcchost --preinclude _cplus_nvcc.h -D__NVCC_HOST__ --accel --preinclude openacc_predef.h -q -o /tmp/nvc++uJqB8q1M4fjd.il /tmp/tmpxft_0001b3c9_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -- /tmp/tmpxft_0001b3c9_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -opt 2 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp px -x 120 0x1000 -astype 0 -x 121 1 -fn /tmp/tmpxft_0001b3c9_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -il /tmp/nvc++uJqB8q1M4fjd.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 119 0x20 -def __pgnu_vsn=130201 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 249 170 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -accel tesla -accel host -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -x 180 0x4000400 -x 121 0xc00 -x 186 0x80 -x 180 0x4000400 -x 121 0xc00 -x 194 0x40000 -x 163 0x1 -x 186 0x80000 -cudaver 12040 -x 176 0x100 -cudacap 80 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -x 176 0x100 -cudacap 80 -x 189 0x8000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -x 187 0x40000 -x 187 0x8000000 -x 60 512 -gnuvsn 130201 -x 69 0x200 -x 123 0x400 -x 118 0x2 -cmdline '+nvc++ /tmp/tmpxft_0001b3c9_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -tp=px --nvcchost -x c++ -acc -gpu=cc80 -Bdynamic -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET -pgf90libs -fortranlibs -D__CUDA_ARCH__=800 -D__CUDA_ARCH_LIST__=800 -D__NV_LEGACY_LAUNCH -c -DCUDA_DOUBLE_MATH_FUNCTIONS -v -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/bin/../targets/x86_64-linux/include --no_preincludes -m64 -o CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include' -asm /tmp/nvc++uJqB8BADpRzx.ll]
+        ignore line: [NVC++/x86-64 Linux 24.5-1: compilation successful]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/share/llvm/bin/opt '-passes=default<O2>' -slp-vectorize-hor=true -memdep-block-scan-limit=160 -nvhpc-consider-undef=true -nvhpc-unswitch-loops-with-trip-count=2 -mcpu=x86-64 /tmp/nvc++uJqB8BADpRzx.ll -S -o /tmp/nvc++0JqBC7Tc8qD-.llvm]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/share/llvm/bin/llc /tmp/nvc++0JqBC7Tc8qD-.llvm -march=x86-64 -mcpu=x86-64 -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+xsave -mattr=+xsaveopt -mattr=+popcnt -mattr=+pclmul -mattr=+fxsr -mattr=+sahf -O2 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o]
+        ignore line: [Unlinking /tmp/nvc++uJqB8q1M4fjd.il]
+        ignore line: [Unlinking /tmp/nvc++0JqBCyF3x_iT.s]
+        ignore line: [Unlinking /tmp/nvc++uJqB8BADpRzx.ll]
+        ignore line: [Unlinking /tmp/nvc++0JqBC7Tc8qD-.llvm]
+        ignore line: [Linking CUDA executable cmTC_e035e]
+        ignore line: [/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e035e.dir/link.txt --verbose=1]
+        ignore line: [/opt/cray/pe/craype/2.7.32/bin/CC  -v -Wl,-v CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o -o cmTC_e035e  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib/stubs" -L"/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib"]
+        ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+        ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        ignore line: [Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_VERSION=12.4.127]
+        ignore line: [Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5]
+        ignore line: [Export PGI=/opt/nvidia/hpc_sdk]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/13//crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/nvhpc.ld --dynamic-list=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/nvhpc.syms -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib/stubs -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib -L/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/lib -L/opt/cray/pe/mpich/8.1.30/gtl/lib -L/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64/stubs -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/lib64 -L/opt/cray/pe/dsmml/0.3.0/dsmml//lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/lib -L/usr/lib64 -L/usr/lib64/gcc/x86_64-suse-linux/13/ -Bdynamic -v CMakeFiles/cmTC_e035e.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl --as-needed -lcupti -lcudart --no-as-needed -lcuda --as-needed -lsci_nvidia_mpi --no-as-needed --as-needed -lsci_nvidia --no-as-needed -ldl --as-needed -lmpi_nvidia --no-as-needed -lmpi_gtl_cuda --as-needed -ldsmml --no-as-needed --disable-new-dtags -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -o cmTC_e035e -L/usr/lib64/gcc/x86_64-suse-linux/13//../../../../lib64 /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_cuda.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_host.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_acc.o -lacchost -laccdevaux -laccdevice -ldl -lcudadevice -lnvf -latomic -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lrt -lpthread -lgcc -lc -lgcc_s -lm /usr/lib64/gcc/x86_64-suse-linux/13//crtend.o /usr/lib64/crtn.o]
+        ignore line: [GNU ld (GNU Binutils]
+        ignore line: [ SUSE Linux Enterprise 15) 2.43.1.20241209-150100.7.52]
+        link line: [/usr/bin/ld: warning: /tmp/pgcudafat2jrBIwJLkdkz.o: missing .note.GNU-stack section implies executable stack]
+          arg [/usr/bin/ld:] ==> ignore
+          arg [warning:] ==> ignore
+          arg [/tmp/pgcudafat2jrBIwJLkdkz.o:] ==> ignore
+          arg [missing] ==> ignore
+          arg [.note.GNU-stack] ==> ignore
+          arg [section] ==> ignore
+          arg [implies] ==> ignore
+          arg [executable] ==> ignore
+          arg [stack] ==> ignore
+        linker tool for 'CUDA': /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CUDA compiler's linker: "/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld" "-v"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CUDA compiler's linker: "/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld" "-V"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CUDA compiler's linker: "/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld" "--version"
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/FindOpenMP.cmake:238 (try_compile)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/cmake/Kokkos/KokkosConfig.cmake:53 (FIND_DEPENDENCY)"
+      - "CMakeLists.txt:19 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s"
+      binary: "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "80"
+      CMAKE_CXX_FLAGS: "-march=znver3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g -O0"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_mp"
+      cached: true
+      stdout: |
+        Change Dir: '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s'
+        
+        Run Build Command(s): /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77331/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_77331.dir/build.make CMakeFiles/cmTC_77331.dir/build
+        gmake[1]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s'
+        Building CXX object CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o
+        /opt/cray/pe/craype/2.7.32/bin/CC   -march=znver3 -mp -v --c++17 --gnu_extensions -MD -MT CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o -c /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s/OpenMPTryFlag.cpp
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_VERSION=12.4.127
+        Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5
+        Export PGI=/opt/nvidia/hpc_sdk
+        Create file CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o.d
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -D__unix -D__unix__ -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4A__ -D__SSE4_1__ -D__SSE4_2__ -D__ABM__ -D__ADX__ -D__AES__ -D__AVX__ -D__AVX2__ -D__BMI__ -D__BMI2__ -D__CLFLUSHOPT__ -D__CLWB__ -D__CLZERO__ -D__F16C__ -D__FMA__ -D__FSGSBASE__ -D__FXSR__ -D__LZCNT__ -D__MOVBE__ -D__MWAITX__ -D__PCLMUL__ -D__PKU__ -D__POPCNT__ -D__PRFCHW__ -D__RDPID__ -D__RDRND__ -D__RDSEED__ -D__LAHF_SAHF__ -D__SHA__ -D__VAES__ -D__VPCLMULQDQ__ -D__WBNOINVD__ -D__XSAVE__ -D__XSAVEC__ -D__XSAVEOPT__ -D__XSAVES__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE --c++17 -I- -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/include/qd --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include-stdexec --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include --sys_include /usr/include/c++/13 --sys_include /usr/include/c++/13/x86_64-suse-linux --sys_include /usr/include/c++/13/backward --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include --sys_include /usr/local/include --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include-fixed --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/include --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D_ACCEL=201003 -D_OPENACC=201711 -D_OPENMP=202011 -DCUDA_VERSION=12040 -DPGI_TESLA_TARGET -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=130201 -D__pgnu_vsn=130201 --no_fixed_bp --accel --preinclude openacc_predef.h --mp -D_OPENMP=202011 --gnu_extensions --dependencies_target_to_stdout CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o -D_NVHPC_RDC --dependencies_to_file CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o.d -q -o /tmp/nvc++G_rBGfezxQAJ.il /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s/OpenMPTryFlag.cpp -- /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s/OpenMPTryFlag.cpp -opt 2 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp znver3 -x 120 0x1000 -astype 0 -x 121 1 -fn /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s/OpenMPTryFlag.cpp -il /tmp/nvc++G_rBGfezxQAJ.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 119 0x20 -def __pgnu_vsn=130201 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 249 170 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -accel tesla -accel host -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -x 180 0x4000400 -x 121 0xc00 -x 186 0x80 -x 180 0x4000400 -x 121 0xc00 -x 194 0x40000 -x 163 0x1 -x 186 0x80000 -cudaver 12040 -x 176 0x100 -cudacap 80 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -x 176 0x100 -cudacap 80 -x 189 0x8000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -x 187 0x40000 -x 187 0x8000000 -x 60 512 -mp -x 69 0x200 -x 69 0x400 -x 69 2 -gnuvsn 130201 -x 69 0x200 -x 123 0x400 -x 180 0x4000000 -x 194 0x20000000 -x 251 0x2 -cmdline '+nvc++ /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s/OpenMPTryFlag.cpp -tp=px -march=znver3 -tp znver3 -acc -gpu=cc80 -Bdynamic -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET -pgf90libs -fortranlibs -mp -v --c++17 --gnu_extensions -MD -MT CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o -c -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include' -asm /tmp/nvc++G_rBG9ko-c2c.ll
+        NVC++/x86-64 Linux 24.5-1: compilation successful
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/share/llvm/bin/opt '-passes=default<O2>' -slp-vectorize-hor=true -memdep-block-scan-limit=160 -nvhpc-consider-undef=true -nvhpc-shuffle-opt -nvhpc-unswitch-loops-with-trip-count=2 -mcpu=znver3 /tmp/nvc++G_rBG9ko-c2c.ll -S -o /tmp/nvc++G_rBGPIppBZg.llvm
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/share/llvm/bin/llc /tmp/nvc++G_rBGPIppBZg.llvm -march=x86-64 -mcpu=znver3 -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4a -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+avx2 -mattr=+f16c -mattr=+fma -mattr=+xsave -mattr=+xsaveopt -mattr=+xsavec -mattr=+xsaves -mattr=+popcnt -mattr=+sha -mattr=+aes -mattr=+pclmul -mattr=+clflushopt -mattr=+fsgsbase -mattr=+rdrnd -mattr=+bmi -mattr=+bmi2 -mattr=+lzcnt -mattr=+fxsr -mattr=+mwaitx -mattr=+clzero -mattr=+pku -mattr=+vaes -mattr=+vpclmulqdq -mattr=+adx -mattr=+clwb -mattr=+movbe -mattr=+prfchw -mattr=+rdpid -mattr=+rdseed -mattr=+sahf -mattr=+wbnoinvd -O2 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o
+        Unlinking /tmp/nvc++G_rBGfezxQAJ.il
+        Unlinking /tmp/nvc++G_rBGXKXhU4S.s
+        Unlinking /tmp/nvc++G_rBG9ko-c2c.ll
+        Unlinking /tmp/nvc++G_rBGPIppBZg.llvm
+        Linking CXX executable cmTC_77331
+        /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77331.dir/link.txt --verbose=1
+        /opt/cray/pe/craype/2.7.32/bin/CC -march=znver3 -mp -v CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o -o cmTC_77331  -v
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4
+        Export NVHPC_CURRENT_CUDA_VERSION=12.4.127
+        Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5
+        Export PGI=/opt/nvidia/hpc_sdk
+        
+        /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/13//crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/nvhpc.ld --dynamic-list=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/nvhpc.syms -L/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/lib -L/opt/cray/pe/mpich/8.1.30/gtl/lib -L/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64/stubs -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/lib64 -L/opt/cray/pe/dsmml/0.3.0/dsmml//lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/lib -L/usr/lib64 -L/usr/lib64/gcc/x86_64-suse-linux/13/ -Bdynamic CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o --as-needed -lcupti -lcudart --no-as-needed -lcuda --as-needed -lsci_nvidia_mpi_mp --no-as-needed --as-needed -lsci_nvidia_mp --no-as-needed -ldl --as-needed -lmpi_nvidia --no-as-needed -lmpi_gtl_cuda --as-needed -ldsmml --no-as-needed --disable-new-dtags -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -o cmTC_77331 -L/usr/lib64/gcc/x86_64-suse-linux/13//../../../../lib64 /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_cuda.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_host.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_acc.o -lacchost -laccdevaux -laccdevice -ldl -lcudadevice -lnvf -latomic -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lrt -lpthread -lgcc -lc -lgcc_s -lm /usr/lib64/gcc/x86_64-suse-linux/13//crtend.o /usr/lib64/crtn.o
+        /usr/bin/ld: warning: /tmp/pgcudafatdNsBjT0M3hUg.o: missing .note.GNU-stack section implies executable stack
+        /usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+        gmake[1]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/FindOpenMP.cmake:282 (message)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/cmake/Kokkos/KokkosConfig.cmake:53 (FIND_DEPENDENCY)"
+      - "CMakeLists.txt:19 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s']
+        ignore line: []
+        ignore line: [Run Build Command(s): /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77331/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_77331.dir/build.make CMakeFiles/cmTC_77331.dir/build]
+        ignore line: [gmake[1]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s']
+        ignore line: [Building CXX object CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/opt/cray/pe/craype/2.7.32/bin/CC   -march=znver3 -mp -v --c++17 --gnu_extensions -MD -MT CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o -c /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s/OpenMPTryFlag.cpp]
+        ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+        ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        ignore line: [Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_VERSION=12.4.127]
+        ignore line: [Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5]
+        ignore line: [Export PGI=/opt/nvidia/hpc_sdk]
+        ignore line: [Create file CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o.d]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -D__unix -D__unix__ -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4A__ -D__SSE4_1__ -D__SSE4_2__ -D__ABM__ -D__ADX__ -D__AES__ -D__AVX__ -D__AVX2__ -D__BMI__ -D__BMI2__ -D__CLFLUSHOPT__ -D__CLWB__ -D__CLZERO__ -D__F16C__ -D__FMA__ -D__FSGSBASE__ -D__FXSR__ -D__LZCNT__ -D__MOVBE__ -D__MWAITX__ -D__PCLMUL__ -D__PKU__ -D__POPCNT__ -D__PRFCHW__ -D__RDPID__ -D__RDRND__ -D__RDSEED__ -D__LAHF_SAHF__ -D__SHA__ -D__VAES__ -D__VPCLMULQDQ__ -D__WBNOINVD__ -D__XSAVE__ -D__XSAVEC__ -D__XSAVEOPT__ -D__XSAVES__ -D__PGI -D__NVCOMPILER -D_GNU_SOURCE -D_PGCG_SOURCE --c++17 -I- -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/extras/qd/include/qd --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/include-stdexec --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/include --sys_include /usr/include/c++/13 --sys_include /usr/include/c++/13/x86_64-suse-linux --sys_include /usr/include/c++/13/backward --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include --sys_include /usr/local/include --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/include-fixed --sys_include /usr/lib64/gcc/x86_64-suse-linux/13/../../../../x86_64-suse-linux/include --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D_ACCEL=201003 -D_OPENACC=201711 -D_OPENMP=202011 -DCUDA_VERSION=12040 -DPGI_TESLA_TARGET -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=130201 -D__pgnu_vsn=130201 --no_fixed_bp --accel --preinclude openacc_predef.h --mp -D_OPENMP=202011 --gnu_extensions --dependencies_target_to_stdout CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o -D_NVHPC_RDC --dependencies_to_file CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o.d -q -o /tmp/nvc++G_rBGfezxQAJ.il /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s/OpenMPTryFlag.cpp -- /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s/OpenMPTryFlag.cpp -opt 2 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -x 59 4 -tp znver3 -x 120 0x1000 -astype 0 -x 121 1 -fn /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s/OpenMPTryFlag.cpp -il /tmp/nvc++G_rBGfezxQAJ.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 119 0x20 -def __pgnu_vsn=130201 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 249 170 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -accel tesla -accel host -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -x 180 0x4000400 -x 121 0xc00 -x 186 0x80 -x 180 0x4000400 -x 121 0xc00 -x 194 0x40000 -x 163 0x1 -x 186 0x80000 -cudaver 12040 -x 176 0x100 -cudacap 80 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -x 176 0x100 -cudacap 80 -x 189 0x8000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -x 187 0x40000 -x 187 0x8000000 -x 60 512 -mp -x 69 0x200 -x 69 0x400 -x 69 2 -gnuvsn 130201 -x 69 0x200 -x 123 0x400 -x 180 0x4000000 -x 194 0x20000000 -x 251 0x2 -cmdline '+nvc++ /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-tash3s/OpenMPTryFlag.cpp -tp=px -march=znver3 -tp znver3 -acc -gpu=cc80 -Bdynamic -D__CRAY_X86_64 -D__CRAY_NVIDIA80 -D__CRAYXT_COMPUTE_LINUX_TARGET -pgf90libs -fortranlibs -mp -v --c++17 --gnu_extensions -MD -MT CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o -c -I/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/include -I/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/include -I/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/include -I/opt/cray/pe/dsmml/0.3.0/dsmml//include' -asm /tmp/nvc++G_rBG9ko-c2c.ll]
+        ignore line: [NVC++/x86-64 Linux 24.5-1: compilation successful]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/share/llvm/bin/opt '-passes=default<O2>' -slp-vectorize-hor=true -memdep-block-scan-limit=160 -nvhpc-consider-undef=true -nvhpc-shuffle-opt -nvhpc-unswitch-loops-with-trip-count=2 -mcpu=znver3 /tmp/nvc++G_rBG9ko-c2c.ll -S -o /tmp/nvc++G_rBGPIppBZg.llvm]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/share/llvm/bin/llc /tmp/nvc++G_rBGPIppBZg.llvm -march=x86-64 -mcpu=znver3 -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4a -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+avx2 -mattr=+f16c -mattr=+fma -mattr=+xsave -mattr=+xsaveopt -mattr=+xsavec -mattr=+xsaves -mattr=+popcnt -mattr=+sha -mattr=+aes -mattr=+pclmul -mattr=+clflushopt -mattr=+fsgsbase -mattr=+rdrnd -mattr=+bmi -mattr=+bmi2 -mattr=+lzcnt -mattr=+fxsr -mattr=+mwaitx -mattr=+clzero -mattr=+pku -mattr=+vaes -mattr=+vpclmulqdq -mattr=+adx -mattr=+clwb -mattr=+movbe -mattr=+prfchw -mattr=+rdpid -mattr=+rdseed -mattr=+sahf -mattr=+wbnoinvd -O2 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [Unlinking /tmp/nvc++G_rBGfezxQAJ.il]
+        ignore line: [Unlinking /tmp/nvc++G_rBGXKXhU4S.s]
+        ignore line: [Unlinking /tmp/nvc++G_rBG9ko-c2c.ll]
+        ignore line: [Unlinking /tmp/nvc++G_rBGPIppBZg.llvm]
+        ignore line: [Linking CXX executable cmTC_77331]
+        ignore line: [/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77331.dir/link.txt --verbose=1]
+        ignore line: [/opt/cray/pe/craype/2.7.32/bin/CC -march=znver3 -mp -v CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o -o cmTC_77331  -v]
+        ignore line: [No supported cpu target is set  CRAY_CPU_TARGET=x86-64 will be used.]
+        ignore line: [Load a valid targeting module or set CRAY_CPU_TARGET]
+        ignore line: [Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4]
+        ignore line: [Export NVHPC_CURRENT_CUDA_VERSION=12.4.127]
+        ignore line: [Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5]
+        ignore line: [Export PGI=/opt/nvidia/hpc_sdk]
+        ignore line: []
+        ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/bin/tools/nvdd -cuda12040 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/13//crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/nvhpc.ld --dynamic-list=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/nvhpc.syms -L/opt/cray/pe/mpich/8.1.30/ofi/nvidia/23.3/lib -L/opt/cray/pe/mpich/8.1.30/gtl/lib -L/opt/cray/pe/libsci/24.07.0/NVIDIA/23.3/x86_64/lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64/stubs -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/nvvm/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/CUPTI/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/extras/Debugger/lib64 -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/math_libs/12.4/lib64 -L/opt/cray/pe/dsmml/0.3.0/dsmml//lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/lib -L/usr/lib64 -L/usr/lib64/gcc/x86_64-suse-linux/13/ -Bdynamic CMakeFiles/cmTC_77331.dir/OpenMPTryFlag.cpp.o --as-needed -lcupti -lcudart --no-as-needed -lcuda --as-needed -lsci_nvidia_mpi_mp --no-as-needed --as-needed -lsci_nvidia_mp --no-as-needed -ldl --as-needed -lmpi_nvidia --no-as-needed -lmpi_gtl_cuda --as-needed -ldsmml --no-as-needed --disable-new-dtags -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/lib64 -o cmTC_77331 -L/usr/lib64/gcc/x86_64-suse-linux/13//../../../../lib64 /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_cuda.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_host.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.5/compilers/lib/acc_init_link_acc.o -lacchost -laccdevaux -laccdevice -ldl -lcudadevice -lnvf -latomic -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lrt -lpthread -lgcc -lc -lgcc_s -lm /usr/lib64/gcc/x86_64-suse-linux/13//crtend.o /usr/lib64/crtn.o]
+        link line: [/usr/bin/ld: warning: /tmp/pgcudafatdNsBjT0M3hUg.o: missing .note.GNU-stack section implies executable stack]
+          arg [/usr/bin/ld:] ==> ignore
+          arg [warning:] ==> ignore
+          arg [/tmp/pgcudafatdNsBjT0M3hUg.o:] ==> ignore
+          arg [missing] ==> ignore
+          arg [.note.GNU-stack] ==> ignore
+          arg [section] ==> ignore
+          arg [implies] ==> ignore
+          arg [executable] ==> ignore
+          arg [stack] ==> ignore
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/FindOpenMP.cmake:440 (try_compile)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/FindOpenMP.cmake:580 (_OPENMP_GET_SPEC_DATE)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/global/common/software/nersc9/kokkos/4.3.00/gpu/lib64/cmake/Kokkos/KokkosConfig.cmake:53 (FIND_DEPENDENCY)"
+      - "CMakeLists.txt:19 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-mHJ6mt"
+      binary: "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-mHJ6mt"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "80"
+      CMAKE_CXX_FLAGS: "-march=znver3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g -O0"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-mHJ6mt'
+        
+        Run Build Command(s): /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_96d3b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_96d3b.dir/build.make CMakeFiles/cmTC_96d3b.dir/build
+        gmake[1]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-mHJ6mt'
+        Building CXX object CMakeFiles/cmTC_96d3b.dir/OpenMPCheckVersion.cpp.o
+        /opt/cray/pe/craype/2.7.32/bin/CC   -march=znver3 -mp --c++17 --gnu_extensions -MD -MT CMakeFiles/cmTC_96d3b.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_96d3b.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_96d3b.dir/OpenMPCheckVersion.cpp.o -c /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-mHJ6mt/OpenMPCheckVersion.cpp
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        Linking CXX executable cmTC_96d3b
+        /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96d3b.dir/link.txt --verbose=1
+        /opt/cray/pe/craype/2.7.32/bin/CC -march=znver3 -mp CMakeFiles/cmTC_96d3b.dir/OpenMPCheckVersion.cpp.o -o cmTC_96d3b
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        /usr/bin/ld: warning: /tmp/pgcudafateGtBmQEsi_BA.o: missing .note.GNU-stack section implies executable stack
+        /usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+        gmake[1]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-mHJ6mt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/share/cmake-3.30/Modules/FindCUDAToolkit.cmake:1185 (find_package)"
+      - "CMakeLists.txt:20 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-srGQSq"
+      binary: "/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-srGQSq"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "80"
+      CMAKE_CXX_FLAGS: "-march=znver3"
+      CMAKE_CXX_FLAGS_DEBUG: "-g -O0"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-srGQSq'
+        
+        Run Build Command(s): /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5714f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5714f.dir/build.make CMakeFiles/cmTC_5714f.dir/build
+        gmake[1]: Entering directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-srGQSq'
+        Building CXX object CMakeFiles/cmTC_5714f.dir/src.cxx.o
+        /opt/cray/pe/craype/2.7.32/bin/CC -DCMAKE_HAVE_LIBC_PTHREAD  -march=znver3  --c++17 -MD -MT CMakeFiles/cmTC_5714f.dir/src.cxx.o -MF CMakeFiles/cmTC_5714f.dir/src.cxx.o.d -o CMakeFiles/cmTC_5714f.dir/src.cxx.o -c /pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-srGQSq/src.cxx
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        Linking CXX executable cmTC_5714f
+        /global/common/software/nersc9/cmake/3.30.2-013e22751e86e490ff355f301911830bb34fc1e5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5714f.dir/link.txt --verbose=1
+        /opt/cray/pe/craype/2.7.32/bin/CC -march=znver3  CMakeFiles/cmTC_5714f.dir/src.cxx.o -o cmTC_5714f
+        No supported cpu target is set, CRAY_CPU_TARGET=x86-64 will be used.
+        Load a valid targeting module or set CRAY_CPU_TARGET
+        /usr/bin/ld: warning: /tmp/pgcudafat4kvBOYbquxfA.o: missing .note.GNU-stack section implies executable stack
+        /usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+        gmake[1]: Leaving directory '/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/hydrogen_kokkos/build/CMakeFiles/CMakeScratch/TryCompile-srGQSq'
+        
+      exitCode: 0
+...
