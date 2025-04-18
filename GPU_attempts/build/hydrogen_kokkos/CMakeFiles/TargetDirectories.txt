@@ -1,7 +1,0 @@
-/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles/hydrogen_simulator_2d.dir
-/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles/edit_cache.dir
-/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles/rebuild_cache.dir
-/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles/list_install_components.dir
-/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles/install.dir
-/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles/install/local.dir
-/pscratch/sd/c/cmccombs/TDSE_sims/GPU_attempts/build/hydrogen_kokkos/CMakeFiles/install/strip.dir
